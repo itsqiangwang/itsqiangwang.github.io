@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="work_projects.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Work - Projects</title>
+	<style>
+		.projects {
+			font-family:helvetica;
+			font-size:100pt;
+			color:blue;
+			display:block;
+		}
+
+		.gallery {
+			font-family:helvetica;
+			font-size:100pt;
+			color:white;
+			text-decoration: none;
+		}
+
+		.gallery:hover {
+			text-decoration: none;
+			border-bottom:5pt dashed blue;
+			color:blue;
+		}
+
+		p{
+			text-align: center;
+		}
+
+		body {
+			animation: colorchange 10s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 10s infinite; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: lightgrey;}
+      25%  {background: dodgerblue;}
+      50%  {background: blue;}
+      75%   {background: dodgerblue;}
+      100%  {background: lightgrey;}
+
+    }
+
+    @-webkit-keyframes colorchange
+    {
+      0%   {background: lightgrey;}
+      25%  {background: dodgerblue;}
+      50%  {background: blue;}
+      75%   {background: dodgerblue;}
+      100%  {background: lightgrey;}
+    }
+		}
+
+	</style>
+</head>
+<body>
+	
+	<ul>
+		<li><a class="link" style="font-size:15pt;color:white;" href="mailto:qiangwangjohn@gmail.com" target="_blank">&#x2709;</a></li>
+		<li style="color:white;">/////</li>
+		<li><a class="link" style="font-size:10pt;color:white;border:2px solid white;border-radius:3px;" href="http://www.instagram.com/qiangjohnwang" target="_blank"><span style="color:transparent;">-</span>o<span style="color:transparent;">-</span></a></li>
+		<li style="color:white;">//////////</li>
+		<li><a class="link" style="font-size:13pt;color:white;" href="https://www.behance.net/qiangwangjd848" target="_blank">B&emacr;</a></li>
+		<li style="color:white;">///////////////</li>
+		<li><a class="link" style="font-size:13pt;color:white;" href="" target="_blank">CV</a></li>
+		<li style="color:white;">////////////////////</li>
+		<li><a class="link" style="color:white;" href="../../index.html">About</a></li>
+	</ul>
+
+<p>
+	<a class="gallery" href="../work_gallery.html">&#9758; Gallery</a>
+	<a class="projects">&#9759; Projects</a>
+</p><br/><br/><br/><br/>
+
+<div class="container">
+	<img class="image" src="projects/clamor/clamor9.png">
+	<div class="overlay">
+		<div class="text">Clamor</div>
+	</div>
+</div>
+
+</body>
+</html>

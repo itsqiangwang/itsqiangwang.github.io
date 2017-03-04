@@ -1,0 +1,39 @@
+img{
+			width:300px;
+			height:auto;
+			padding:50px;
+			display:inline-block;
+		}
+
+.copyright {
+    text-align:center;
+    font-family: helvetica;
+    color:dimgrey;
+    font-size:8pt;
+    padding:5px;
+  }
+
+.link:hover {
+	background-color:white;
+}
+
+.link:link {
+	color:blue;
+	text-decoration: none;
+}
+
+.link:visited {
+	color:blue;
+}
+
+ul {
+	list-style-type:none;
+	background-color:transparent;
+  overflow: hidden;
+}
+
+li {
+	font-family:helvetica;
+	padding:3px;
+	float:right;
+}
