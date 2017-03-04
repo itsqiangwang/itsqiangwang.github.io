@@ -1,0 +1,24 @@
+body {
+      background-color:lightgrey;
+  }
+
+ul {
+  list-style-type:none;
+  background-color:transparent;
+  overflow: hidden;
+}
+
+li {
+  font-family:helvetica;
+  padding:3px;
+  float:right;
+}
+
+.link:hover {
+        background-color:white;
+  }
+
+.link:link {
+  color:white;
+  text-decoration: none;
+}

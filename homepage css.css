@@ -1,0 +1,74 @@
+body {
+      animation: colorchange 10s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 10s infinite; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: dodgerblue;}
+      25%  {background: blue;}
+      50%  {background: navy;}
+      75%   {background: blue;}
+      100%  {background: dodgerblue;}
+
+    }
+
+    @-webkit-keyframes colorchange
+    {
+      0%   {background: dodgerblue;}
+      25%  {background: blue;}
+      50%  {background: navy;}
+      75%   {background: blue;}
+      100%  {background: dodgerblue;}
+    }
+
+.style {
+    width:auto;
+    height:500px;
+    float:right;
+    margin:10pt;
+    padding:10pt;
+  }
+
+.copyright {
+    text-align:center;
+    font-family: helvetica;
+    color:dimgrey;
+    font-size:8pt;
+    padding:5px;
+  }
+
+a:hover {
+	background-color:red;
+}
+
+a:link {
+	color:blue;
+	text-decoration: none;
+}
+
+a:visited {
+	color:blue;
+}
+
+p {
+	font-family:helvetica;
+	font-size:50pt;
+	color:grey;
+	padding:40pt;
+	margin:40pt;
+	text-align:left;
+}
+
+ul {
+	list-style-type:none;
+	background-color:transparent;
+  overflow: hidden;
+}
+
+li {
+	font-family:helvetica;
+	padding:3px;
+	float:right;
+}
