@@ -1,22 +1,22 @@
+html{
+  background-color:gainsboro;
+}
+
 .copyright {
     text-align:center;
     font-family: helvetica;
     color:dimgrey;
-    font-size:8pt;
-    padding:5px;
+    font-size:0.8vw;
+    padding:20pt;
   }
 
 .link:hover {
-	background-color:white;
+	background-color:transparent;
+  text-decoration: underline;
 }
 
-.link:link {
-	color:blue;
-	text-decoration: none;
-}
-
-.link:visited {
-	color:blue;
+.link{
+  text-decoration: none;
 }
 
 ul {
