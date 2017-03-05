@@ -1,3 +1,28 @@
+.copyright {
+    text-align:center;
+    font-family: helvetica;
+    color:dimgrey;
+    font-size:0.8vw;
+    padding:5px;
+  }
+
+img {
+    height:40vw;
+    width:auto;
+    border-radius:50%;
+}
+
+figure{
+    text-align:center;
+}
+
+figcaption{
+  font-family:helvetica;
+  font-size:2vw;
+  color:grey;
+  padding-bottom:10%;
+}
+
 html{
   background-color:gainsboro;
 }
@@ -23,48 +48,13 @@ ul {
 	list-style-type:none;
 	background-color:transparent;
   overflow: hidden;
+  position:fixed;
+  right:2%;
+  top:0;
 }
 
 li {
 	font-family:helvetica;
-	padding:3px;
+	padding:5px;
 	float:right;
-}
-
-.container {
-  position: absolute;
-  width:300px;
-}
-
-.image {
-  display:inline-block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  background-color: blue;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: lightgrey;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }

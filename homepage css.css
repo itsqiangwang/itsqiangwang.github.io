@@ -62,10 +62,13 @@ ul {
 	list-style-type:none;
 	background-color:transparent;
   overflow: hidden;
+  position:fixed;
+  top:0;
+  right:2%;
 }
 
 li {
 	font-family:helvetica;
-	padding:3px;
+	padding:5px;
 	float:right;
 }
