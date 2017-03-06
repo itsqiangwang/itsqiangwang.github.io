@@ -36,17 +36,9 @@ body {
     padding:5px;
   }
 
-a:hover {
-	background-color:red;
-}
-
 a:link {
-	color:blue;
-	text-decoration: none;
-}
-
-a:visited {
-	color:blue;
+	color:white;
+  text-decoration: none;
 }
 
 p {
