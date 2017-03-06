@@ -1,0 +1,49 @@
+body {
+      background-color: gainsboro;
+    }
+
+.style {
+    width:auto;
+    height:50vw;
+  }
+
+td{
+  padding:20pt;
+  }
+
+.copyright {
+    text-align:center;
+    font-family: helvetica;
+    color:dimgrey;
+    font-size:0.8vw;
+    padding:5px;
+  }
+
+a:link {
+	color:white;
+  text-decoration: none;
+}
+
+p {
+	font-family:helvetica;
+  font-size:5vw;
+	color:grey;
+	padding:40pt;
+	margin:40pt;
+	text-align:left;
+}
+
+ul {
+	list-style-type:none;
+	background-color:transparent;
+  overflow: hidden;
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+li {
+	font-family:helvetica;
+	padding:5px;
+  float:left;
+}
