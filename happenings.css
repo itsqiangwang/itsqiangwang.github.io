@@ -2,13 +2,27 @@ body {
       background-color: gainsboro;
     }
 
+img{
+      width:35%;
+      height:auto;
+      display:inline-block;
+}
+
+div{
+  display:inline-block;
+  padding-top:5%;
+  text-align:center;
+}
+
+figcaption{
+  font-size:2.5vw;
+  font-family:Andale Mono;
+  color:dimgrey;
+}
+
 .style {
     width:auto;
     height:50vw;
-  }
-
-td{
-  padding:20pt;
   }
 
 .copyright {
