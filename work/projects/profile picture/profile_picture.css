@@ -6,26 +6,36 @@
     padding:5px;
   }
 
+  .next{
+  font-family:helvetica;
+  color:#b8b8b8;
+  text-align:right;
+  display:block;
+  position:fixed;
+  bottom:2%;
+  right:2%;
+}
+
 figure{
 	text-align:center;
 }
 
 img{
-	height:60vw;
+	height:50vw;
 	width:auto;
 }
 
 figcaption{
   font-family:helvetica;
-  font-size:2vw;
-  color:black;
+  font-size:1.5vw;
+  color:dimgrey;
   padding-bottom:10%;
   font-weight:100;
 }
 
 p{
 	text-align:center;
-	color:grey;
+	color:#b8b8b8;;
   font-weight:100;
 	font-family: helvetica;
 	font-size:2.3vw;
@@ -34,11 +44,11 @@ p{
 h1{
 	font-family:helvetica;
 	font-size:6vw;
-	color:#005aff;
+	color:#b8b8b8;;
 	text-align:center;
 	display:block;
   position:fixed;
-  top:0;
+  top:7%;
   text-align:left;
 }
 

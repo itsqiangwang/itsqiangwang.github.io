@@ -1,4 +1,4 @@
-body {
+{
       animation: colorchange 10s infinite; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
       -webkit-animation: colorchange 10s infinite; /* Chrome and Safari */
@@ -6,11 +6,11 @@ body {
 
     @keyframes colorchange
     {
-      0%   {background: dodgerblue;}
-      25%  {background: blue;}
-      50%  {background: navy;}
-      75%   {background: blue;}
-      100%  {background: dodgerblue;}
+      0%   {background: white;}
+      25%  {background: grey;}
+      50%  {background: skyblue;}
+      75%   {background: grey;}
+      100%  {background: white;}
 
     }
 
@@ -22,6 +22,10 @@ body {
       75%   {background: blue;}
       100%  {background: dodgerblue;}
     }
+
+body{
+  background-color:gainsboro;
+}
 
 .style {
     width:auto;
@@ -36,7 +40,7 @@ body {
     padding:5px;
   }
 
-a:link {
+.link:link {
 	color:white;
   text-decoration: none;
 }
@@ -44,7 +48,7 @@ a:link {
 p {
 	font-family:helvetica;
   font-size:5vw;
-	color:grey;
+	color:#b8b8b8;
 	padding:40pt;
 	margin:40pt;
 	text-align:left;
