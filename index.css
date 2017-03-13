@@ -7,9 +7,9 @@
   }
 
 img {
-    height:20vw;
+    height:50vw;
     width:auto;
-    border-radius:50%;
+    border-radius: 50%;
   }
 
 figcaption{
@@ -18,6 +18,10 @@ figcaption{
   color:dimgrey;
   font-weight:100;
   font-size:2vw;
+  padding:5%;
+}
+
+div{
   padding:5%;
 }
 
