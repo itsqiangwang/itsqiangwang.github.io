@@ -7,9 +7,8 @@
   }
 
 img {
-    height:50vw;
+    height:20vw;
     width:auto;
-    border-radius: 50%;
   }
 
 figcaption{
@@ -18,11 +17,11 @@ figcaption{
   color:dimgrey;
   font-weight:100;
   font-size:2vw;
-  padding:5%;
+  padding-bottom:10%;
 }
 
-div{
-  padding:5%;
+figure{
+  display:inline-block;
 }
 
 html{

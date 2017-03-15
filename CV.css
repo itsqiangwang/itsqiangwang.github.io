@@ -13,7 +13,7 @@ body {
 .tooltiptext {
     visibility: hidden;
     position: relative;
-    color:blue;
+    color:grey;
 }
 
 .tooltip:hover .tooltiptext {
