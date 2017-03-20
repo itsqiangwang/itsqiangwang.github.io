@@ -1,24 +1,7 @@
-.copyright {
-    text-align:center;
-    font-family: helvetica;
-    color:dimgrey;
-    font-size:0.8vw;
-    padding:5px;
-  }
-
 img {
-    height:20vw;
-    width:auto;
+    height:auto;
+    width:25vw;
   }
-
-figcaption{
-  font-family: helvetica;
-  text-decoration: none;
-  color:dimgrey;
-  font-weight:100;
-  font-size:2vw;
-  padding-bottom:10%;
-}
 
 figure{
   display:inline-block;

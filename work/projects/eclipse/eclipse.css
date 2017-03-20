@@ -22,7 +22,7 @@ img{
 
 p{
 	text-align:center;
-	color:#b8b8b8;
+	color:dimgrey;
   font-weight:100;
 	font-family: helvetica;
 	font-size:2.3vw;
@@ -31,7 +31,7 @@ p{
 h1{
 	font-family:helvetica;
 	font-size:6vw;
-	color:#b8b8b8;
+	color:black;
 	text-align:center;
 	display:block;
   position:fixed;
