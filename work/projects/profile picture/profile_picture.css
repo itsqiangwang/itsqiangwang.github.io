@@ -16,6 +16,16 @@
   right:2%;
 }
 
+.previous{
+  font-family:helvetica;
+  color:#b8b8b8;
+  text-align:right;
+  display:block;
+  position:fixed;
+  bottom:2%;
+  left:2%;
+}
+
 figure{
 	text-align:center;
 }

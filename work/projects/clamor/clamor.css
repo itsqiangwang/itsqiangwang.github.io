@@ -1,11 +1,3 @@
-.copyright {
-    text-align:center;
-    font-family: helvetica;
-    color:dimgrey;
-    font-size:0.8vw;
-    padding:5px;
-  }
-
 img{
 	height:50vw;
 	width:auto;
@@ -53,6 +45,16 @@ html{
   font-size:5vw;
   color:white;
   font-family: helvetica;
+}
+
+.next{
+  font-family:helvetica;
+  color:#b8b8b8;
+  text-align:right;
+  display:block;
+  position:fixed;
+  bottom:2%;
+  right:2%;
 }
 
 .previous{
