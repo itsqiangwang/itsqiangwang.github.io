@@ -2,11 +2,9 @@ body {
       background-color: gainsboro;
     }
 
-div{
+figure{
   display:inline-block;
   padding-top:10%;
-  padding-left:5%;
-  padding-right:5%;
   text-align:center;
 }
 
