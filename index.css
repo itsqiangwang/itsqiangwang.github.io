@@ -1,7 +1,7 @@
-html{
-      animation: colorchange 0.3s infinite; /* animation-name followed by duration in seconds*/
-         /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 0.3s infinite; /* Chrome and Safari */
+/*{
+      animation: colorchange 0.3s infinite; animation-name followed by duration in seconds
+         you could also use milliseconds (ms) or something like 2.5s 
+      -webkit-animation: colorchange 0.3s infinite; Chrome and Safari 
     }
 
     @keyframes colorchange
@@ -22,10 +22,11 @@ html{
       75%   {background: grey;}
       100%  {background: white;}
     }
+    */
 
 img {
     height:auto;
-    width:25vw;
+    width:20vw;
   }
 
 figure{
@@ -40,7 +41,7 @@ html{
     text-align:center;
     font-family: helvetica;
     color:dimgrey;
-    font-size:0.8vw;
+    font-size:1vw;
     padding:20pt;
   }
 

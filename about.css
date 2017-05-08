@@ -1,31 +1,22 @@
-{
+html{
       animation: colorchange 10s infinite; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 10s infinite; /* Chrome and Safari */
+      -webkit-animation: colorchange 0.1s infinite; /* Chrome and Safari */
     }
 
     @keyframes colorchange
     {
-      0%   {background: white;}
+      0%   {background: lightgrey;}
       25%  {background: grey;}
-      50%  {background: skyblue;}
+      50%  {background: lightgrey;}
       75%   {background: grey;}
-      100%  {background: white;}
+      100%  {background: lightgrey;}
 
     }
 
-    @-webkit-keyframes colorchange
-    {
-      0%   {background: dodgerblue;}
-      25%  {background: blue;}
-      50%  {background: navy;}
-      75%   {background: blue;}
-      100%  {background: dodgerblue;}
-    }
-
-body{
+/*body{
   background-color:gainsboro;
-}
+}*/
 
 .style {
     width:auto;
@@ -36,7 +27,7 @@ body{
     text-align:center;
     font-family: helvetica;
     color:dimgrey;
-    font-size:0.8vw;
+    font-size:1vw;
     padding:5px;
   }
 
@@ -47,11 +38,14 @@ body{
 
 p {
 	font-family:helvetica;
-  font-size:5vw;
+  font-size:10vw;
 	color:dimgrey;
 	padding:40pt;
 	margin:40pt;
-	text-align:center;
+	text-align:left;
+  padding-left: 10%;
+  padding-right:10%;
+
 }
 
 ul {

@@ -29,17 +29,16 @@ body {
   }
 
 p{
-  color:grey;
+  color:dimgrey;
   font-family:helvetica;
   text-align:left;
   font-size:6vw;
   padding-left:10%;
   padding-right:10%;
-  padding-top:10%;
 }
 
 .skill{
-  color:grey;
+  color:dimgrey;
   font-family:helvetica;
   text-align:left;
   font-size:4vw;
