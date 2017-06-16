@@ -1,7 +1,7 @@
-html{
-      animation: colorchange 10s infinite; /* animation-name followed by duration in seconds*/
-         /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 0.1s infinite; /* Chrome and Safari */
+/*html{
+      animation: colorchange 10s infinite;  animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s 
+      -webkit-animation: colorchange 0.1s infinite; /* Chrome and Safari 
     }
 
     @keyframes colorchange
@@ -13,10 +13,11 @@ html{
       100%  {background: lightgrey;}
 
     }
+    */
 
-/*body{
+body{
   background-color:gainsboro;
-}*/
+}
 
 .style {
     width:auto;
@@ -38,7 +39,7 @@ html{
 
 p {
 	font-family:helvetica;
-  font-size:10vw;
+  font-size:2.3vw;
 	color:dimgrey;
 	padding:40pt;
 	margin:40pt;
