@@ -83,7 +83,7 @@ html, body{
 
 p,a{
     text-align: center;
-    font-family:'Roboto Mono';
+    font-family:'Roboto Mono',helvetica,serif;
     font-size:1em;;
 }
 
