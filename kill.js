@@ -57,13 +57,10 @@ var numKill = 1;
 //}
 
 function tInT(){
-  noFill();
-  stroke(255,255,255);
-  strokeWeight(1);
-  textSize(random(width/700,width/23.3));
-  for(var i = 0;i<numKill; i++){
-    text('portfolio under construction',random(-width,width),random(-height,height));
-  }
+  fill(0,0,255);
+  noStroke();
+  textSize(width/20);
+    text('portfolio under construction',mouseX+width/14,mouseY);
 }
 
 //function title(){
@@ -79,8 +76,13 @@ function setup() {
 }
 
 function draw() {
-  background('rgba(0,0,0,0.1)');
-  tInT();
+    background('rgba(0,0,0,0.1)');
+    fill('rgba(0,0,255,1)');
+    noStroke();
+    ellipse(mouseX,mouseY,width/14,width/14);
   //shootView();
 }
-"sketch01";
+
+function mouseClicked (){
+    tInT();
+}
