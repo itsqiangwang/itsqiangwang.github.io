@@ -39,7 +39,8 @@ function displayText (){
 }
 
 function setup() {
-  createCanvas(525,735);
+  //createCanvas(525,735);
+  createCanvas(420,588);
   background(0);
 }
 

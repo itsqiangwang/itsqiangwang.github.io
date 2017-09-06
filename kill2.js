@@ -84,7 +84,7 @@ function title(){
 }
 
 function setup() {
-  createCanvas(525,735);
+  createCanvas(420,588);
 }
 
 function draw() {
