@@ -18,7 +18,7 @@ function displayText (){
   //text('Blank Poster: Quantity \n X:'mouseX'',width/30,height/30);
   text('Blank Poster: Quantity',width/30,height/30);
   text('X',width/2,height/30);
-  text(displayValue,width/2.15,height-height/30);
+  text(displayValue,width/2.1,height-height/30);
   text(mouseX,width/1.06,height/30);
   text('Y',width/36,height/2);
   text(mouseY,width/30,height-height/30);
