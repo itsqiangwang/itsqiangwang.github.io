@@ -159,6 +159,45 @@ function mouseMoved (){
   printT.sWeight9 = random(0,25);
 }
 
+function mousePressed (){
+  //r = (random(0,255));
+  //g = (random(0,255));
+  //b = (random(0,255));
+  printT.variableV = random(printT.variationV);
+  printT.variableA = random(printT.variationA);
+  printT.variableR = random(printT.variationR);
+  printT.variableI = random(printT.variationI);
+  printT.variableA2 = random(printT.variationA2);
+  printT.variableT = random(printT.variationT);
+  printT.variableI2 = random(printT.variationI2);
+  printT.variableO = random(printT.variationO);
+  printT.variableN = random(printT.variationN);
+  
+  printT.sizeText1 = random(5,10);
+  printT.sizeText2 = random(5,10);
+  printT.sizeText3 = random(5,10);
+  printT.sizeText4 = random(5,10);
+  printT.sizeText5 = random(5,10);
+  printT.sizeText6 = random(5,10);
+  printT.sizeText7 = random(5,10);
+  printT.sizeText8 = random(5,10);
+  printT.sizeText9 = random(5,10);
+  
+  //printT.strokeColorR = random(50,80); 
+  printT.strokeColorG = random(0,255);
+  printT.strokeColorB = random(0,255);
+  
+  printT.sWeight1 = random(0,25);
+  printT.sWeight2 = random(0,25);
+  printT.sWeight3 = random(0,25);
+  printT.sWeight4 = random(0,25);
+  printT.sWeight5 = random(0,25);
+  printT.sWeight6 = random(0,25);
+  printT.sWeight7 = random(0,25);
+  printT.sWeight8 = random(0,25);
+  printT.sWeight9 = random(0,25);
+}
+
 function setup() {
   createCanvas(420,588);
   //map(mouseY,0,588,0,255);
@@ -169,4 +208,42 @@ function draw() {
   background(255);
   printT.printBGD();
   printT.printText();
+  if (mouseIsPressed) {
+  //r = (random(0,255));
+  //g = (random(0,255));
+  //b = (random(0,255));
+  printT.variableV = random(printT.variationV);
+  printT.variableA = random(printT.variationA);
+  printT.variableR = random(printT.variationR);
+  printT.variableI = random(printT.variationI);
+  printT.variableA2 = random(printT.variationA2);
+  printT.variableT = random(printT.variationT);
+  printT.variableI2 = random(printT.variationI2);
+  printT.variableO = random(printT.variationO);
+  printT.variableN = random(printT.variationN);
+  
+  printT.sizeText1 = random(5,10);
+  printT.sizeText2 = random(5,10);
+  printT.sizeText3 = random(5,10);
+  printT.sizeText4 = random(5,10);
+  printT.sizeText5 = random(5,10);
+  printT.sizeText6 = random(5,10);
+  printT.sizeText7 = random(5,10);
+  printT.sizeText8 = random(5,10);
+  printT.sizeText9 = random(5,10);
+  
+  //printT.strokeColorR = random(50,80); 
+  printT.strokeColorG = random(0,255);
+  printT.strokeColorB = random(0,255);
+  
+  printT.sWeight1 = random(0,25);
+  printT.sWeight2 = random(0,25);
+  printT.sWeight3 = random(0,25);
+  printT.sWeight4 = random(0,25);
+  printT.sWeight5 = random(0,25);
+  printT.sWeight6 = random(0,25);
+  printT.sWeight7 = random(0,25);
+  printT.sWeight8 = random(0,25);
+  printT.sWeight9 = random(0,25);
+}
 }
