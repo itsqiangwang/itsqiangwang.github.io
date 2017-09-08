@@ -183,10 +183,11 @@ function mousePressed(){
 
 function setup() {
   createCanvas(420,588);
+  frameRate(300);
 }
 
 function draw() {
-  background('rgba(0,0,0,0.1)');
+  background('rgba(0,0,0,0.05)');
   drawLines();
   writeText();
   drawCursor();
