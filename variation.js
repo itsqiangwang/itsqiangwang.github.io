@@ -93,10 +93,20 @@ var printT = {
     //title
     fill(0);
     noStroke();
+    textSize(width/45);
+    text('_ A change or difference in condition, amount, or level, typically with certain limits.',width/14,height/1.05);
+    
     textSize(width/40);
-    text('Blank Poster: Variation',width/14,height/1.05);
+    textStyle(NORMAL);
+    text('BLANK POSTER : ',width/14,height/1.1);
+    
+    textStyle(BOLD);
+    textSize(width/30);
+    text('VARIATION',width/3.4,height/1.1)
+    
+    textStyle(NORMAL);
     textSize(width/60);
-    text(this.r[this.i],width/1.35,height/1.05);
+    text(this.r[this.i],width/1.35,height/1.1);
     this.i++;
     if (this.i==this.r.length){
       this.i=0;

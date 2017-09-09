@@ -129,7 +129,7 @@ function writeText(){
   stroke(0);
   strokeWeight(2);
   textLeading(Leading13);//9
-  text('B L A N K  P O S T E R :\nH A L F --------------- 1 / 2\nEither of two equal or\ncorresponding parts into \nwhich something is or \ncan be divided.'
+  text('B L A N K  P O S T E R :\nH A L F --------------- 1 / 2\n_ Either of two equal or\ncorresponding parts into \nwhich something is or \ncan be divided.'
   ,width-width/4+8,height-56);
 }
 
