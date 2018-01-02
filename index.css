@@ -1,8 +1,6 @@
-/*
 body {
     background-image:url('MRI SCAN_2.gif');
 }
-*/
 
 html {
     margin:0;
@@ -18,15 +16,15 @@ html {
     font-family:'Roboto Mono', monospace;
     text-align:center;
     font-size:5vw;
-    color:black;
+    color:white;
 }
 
 #links:link {
-    color:black;
+    color:white;
 }
 
 #links:visited {
-    color:black;
+    color:white;
 }
 
 #links:hover {
