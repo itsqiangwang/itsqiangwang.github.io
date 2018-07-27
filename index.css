@@ -14,8 +14,8 @@ html {
 
 .tempMsg {
     font-family:'Roboto Mono', monospace;
-    text-align:center;
-    font-size:5vw;
+    text-align:left;
+    font-size:30px;
     color:white;
 }
 
