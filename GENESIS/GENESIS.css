@@ -1,0 +1,126 @@
+html{
+    padding:15px 0px 15px 0px;
+}
+
+.bg {
+    background-color:black;
+}
+
+#topLinks{
+    color:white;
+    font-family:'Roboto Mono', monospace;
+    font-size:12px;
+}
+
+#topLinks a:link,
+#topLinks a:visited {
+    color:white;
+}
+
+#topLinks a:hover,
+#topLinks a:active {
+    color:black;
+    text-decoration: none;
+    cursor: e-resize;
+}
+
+#topLinksOut{
+    color:white;
+    font-family:'Roboto Mono', monospace;
+    font-size:12px;
+}
+
+#topLinksOut a:link,
+#topLinksOut a:visited {
+    color:white;
+}
+
+#topLinksOut a:hover,
+#topLinksOut a:active {
+    color:black;
+    text-decoration: none;
+    cursor: ne-resize;
+}
+
+#topLinksBack{
+    color:white;
+    font-family:'Roboto Mono', monospace;
+    font-size:12px;
+}
+
+#topLinksBack a:link,
+#topLinksBack a:visited {
+    color:white;
+}
+
+#topLinksBack a:hover,
+#topLinksBack a:active {
+    color:black;
+    text-decoration: none;
+    cursor: w-resize;
+}
+
+#projectTitle{
+    color:white;
+    font-family:'Roboto Mono',monospace;
+    font-size:5vw;
+    line-height: 5vw;
+}
+
+#projectLink{
+    color:white;
+    font-family:'Roboto Mono',monospace;
+    font-size:5vw;
+    line-height: 6vw;
+    padding-top: 15px;
+}
+
+#projectLink a:link,
+#projectLink a:visited {
+    color:white;
+}
+
+#projectLink a:hover,
+#projectLink a:active {
+    color:black;
+    text-decoration: none;
+}
+
+#projectTypeYear{
+    color:white;
+    font-family:'Roboto Mono',monospace;
+    font-size:14px;
+    line-height:20px;
+    padding-top: 10px;
+}
+
+#projectDescription{
+    color:white;
+    font-family: 'Roboto Mono',monospace;
+    font-size:12px;
+    line-height:18px;
+}
+
+.GenesisDocumentation{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0px 15px 15px 15px;
+    width:100%;
+}
+
+.GenesisDocumentationGif{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0px 15px 15px 15px;
+    width:100%;
+    max-width: 960px;
+}
+
+#footer{
+    color:white;
+    padding: 0px 15px 15px 15px;
+    font-size: 10px;
+    font-family: 'Roboto Mono',monospace;
+}

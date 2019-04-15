@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qiang John Wang's Lab</title>
+  <link href="../index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" href="../063098.jpg" type="image/jpg" sizes="100x100">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="body">
+    <!--TOP SECTION; NAME+INFO-->
+    <div id="myNav" class="overlay">
+      <div id="navbar">
+          <a href="../index.html">QIANG JOHN WANG</a>
+          <span id="info" onclick="openNav()"><span>INFO</span></span>
+      </div>
+        
+      <div class="overlay-content">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div>
+                    Communication Design — Graphic, Motion, &amp; Interactive; Print &amp; Digital.<br>
+                    <a href="http://dma.ucla.edu/" target="_blank">UCLA DMA</a>, Class of 2020.<br>
+                    Los Angeles, California.
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div><a href="../fakeresume.pdf" target="_blank">Resume</a><br>
+                Email — <a href="mailto:qiangwangjohn@gmail.com">qiangwangjohn@gmail.com</a><br>
+                    <a href="https://www.behance.net/qiangjohnwang" target="_blank">Behance</a>, <a href="https://instagram.com/qiangjohnwang" target="_blank">Instagram</a><br>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="glyphicon glyphicon-menu-up"></span></a>
+    </div>
+    
+    <!--Miscellaneous-->
+    <div class="projectContainerTOP" id="pMisc">
+        <div class="projectName">Laboratory</div>
+        <div class="projectType">Sketches, Experiments, Failures, Explosions...</div>
+        
+    <!--AA100 Alphabet-->
+        <video class="projectVideo" controls autoplay muted loop playsinline>
+            <source src="Alphabet-QiangJohnWang.mp4" type="video/mp4">
+        </video>
+        <img class="projectImage" src="Alphabet-compiled.png">    
+        
+    <!--122017--> 
+        <center>
+            <div style="background-color: black; margin-top: 4px;"> 
+                <video class="projectVideo" autoplay muted loop playsinline style="width: 100%; max-height: 1000px;">
+                <source src="videos%202.mp4" type="video/mp4">
+                </video>
+            </div>
+        </center>
+            
+    
+
+
+    <div class="spaceBottom"></div>
+    
+    <div id="myNavBottom" class="overlayBottom">
+      <div id="navbarBottom">
+          <a href="../index.html">HOME</a>
+      </div>
+    </div>
+    
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-150px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        
+        /* Open */
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close */
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+</body>
+</html>

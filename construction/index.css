@@ -1,0 +1,32 @@
+body {
+    background-image:url('MRI SCAN_2.gif');
+}
+
+html {
+    margin:0;
+}
+
+.topbox {
+    height:5vw;
+    width:auto;
+    background-color: grey;
+}
+
+.tempMsg {
+    font-family:'Roboto Mono', monospace;
+    text-align:left;
+    font-size:30px;
+    color:white;
+}
+
+#links:link {
+    color:white;
+}
+
+#links:visited {
+    color:white;
+}
+
+#links:hover {
+    color:transparent;
+}
