@@ -5,7 +5,7 @@ body {
 
 * {
     box-sizing: border-box;
-    scroll-behavior: smooth;
+/*    scroll-behavior: smooth;*/
 }
 
 p{
@@ -74,10 +74,10 @@ p{
     display: none;
     background: white;
     color: black;
-    padding: 10px 15px;
+    padding: 1.5vh 2.1vh;
     cursor: default;
     font-family: "Noto Serif SC", serif;
-    font-size: 18px;
+    font-size: 2.6vh;
 }
 
 .projectDetails:hover .projectDescription{
@@ -275,11 +275,17 @@ p{
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
   max-width: 50%;
+  margin-left: auto; 
+  margin-right: auto;
+  display: block;
 }
 
 .column img, .column video {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
     animation-name:imageAnimation;
     animation-duration: 3s;
     animation-timing-function: ease;
@@ -303,6 +309,7 @@ p{
     animation-timing-function: ease;
     opacity: 1;
     position: relative;
+    top: 0px;
 }
 
 .imgContainer {
@@ -311,7 +318,7 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     animation-name:imageAnimation;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: ease;
     position: relative;
     opacity: 1;
