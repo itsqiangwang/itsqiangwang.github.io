@@ -13,14 +13,14 @@ p{
 
 .date{
     color: white;
-    margin: 15px;
-    font-size: 28px;
+    margin: 2.1vh;
+    font-size: 2.6vh;
     text-align: center;
 }
 
 .menuBar{
     border: solid 0px;
-    height: 40px;
+    height: 6vh;
     width: 100%;
     position: sticky;
     top: 0;
@@ -32,12 +32,12 @@ p{
     border: solid 0px;
     height: 30px;
     position: fixed;
-    left: 15px;
-    top: 5px;
+    left: 2.1vh;
+    top: 0.7vh;
 }
 
 .name a{
-    font-size: 18px;
+    font-size: 2.6vh;
     color: black;
     text-decoration: none;
     transition: 0.5s;
@@ -54,10 +54,10 @@ p{
     border: solid 0px;
     height: 30px;
     position: fixed;
-    right: 15px;
-    top: 5px;
+    right: 2.1vh;
+    top: 0.7vh;
     text-align: right;
-    font-size: 18px;
+    font-size: 2.6vh;
     color: black;
     font-family:"Noto Sans SC", sans-serif;
     transition: 0.5s;
@@ -69,9 +69,9 @@ p{
     left: 0px;
     right: 0px;
     bottom: 0px;
-    top:40px;
-    padding: 10px 15px;
-    font-size: 18px;
+    top:6vh;
+    padding: 1vh 2.1vh;
+    font-size: 2.6vh;
     text-align: left;
     color: black;
     background-color: rgba(0,0,0,0);
@@ -111,7 +111,7 @@ p{
     animation-duration: 3s;
     animation-timing-function: ease;
     position: relative;
-    margin: 50px;
+    margin: 7vh;
     opacity: 1;
 }
 
@@ -163,7 +163,7 @@ p{
     margin-right: auto;
     top: 45%;
     font-family:"Noto Serif SC", serif;
-    font-size: 16px;
+    font-size: 2.3vh;
 }
 
 .imgOverlayContent a{
