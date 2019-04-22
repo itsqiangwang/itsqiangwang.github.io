@@ -12,16 +12,9 @@ p{
     margin: 0;
 }
 
-.date{
-    color: white;
-    margin: 15px;
-    font-size: 28px;
-    text-align: center;
-}
-
 .menuBar{
     border: solid 0px;
-    height: 40px;
+    height: 6vh;
     width: 100%;
     position: sticky;
     top: 0;
@@ -34,7 +27,7 @@ p{
 
 .titleContainer{
     border: solid 0px;
-    height: 40px;
+    height: 6vh;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -45,10 +38,10 @@ p{
 
 .title{
     border: solid 0px;
-    line-height: 40px;
+    line-height: 6vh;
     vertical-align: middle;
     text-align: center;
-    font-size: 18px;
+    font-size: 2.6vh;
     font-family: "Noto Serif SC", serif;
     color: black;
     text-decoration: none;
@@ -61,15 +54,15 @@ p{
 .divider{
     background-color: white;
     width: 100%;
-    height: 2px;
-    margin: 50px 0px 0px 0px;
+    height: 0.2vh;
+    margin: 7.5vh 0px 0px 0px;
 }
 
 .projectDetails{
     color: white;;
-    font-size: 18px;
+    font-size: 2.6vh;
     font-family: "Noto Sans SC", sans-serif;
-    margin:15px;
+    margin:2.1vh;
     display: inline-block;
 }
 
@@ -108,9 +101,9 @@ p{
     border: solid 0px;
     height: 30px;
     position: absolute;
-    right: 15px;
-    top: 5px;
-    font-size: 18px;
+    right: 2.1vh;
+    top: 0.7vh;
+    font-size: 2.6vh;
     color: black;
     text-decoration: none;
     transition: 0.5s;
@@ -124,18 +117,18 @@ p{
 
 .indexContent {
     position: relative;
-    top: 47px;
-    margin: 0 15px;
+    top: 7vh;
+    margin: 0 2.1vh;
     color: dimgrey;
     font-family: "Noto Serif SC", serif;
-    font-size: 16px;
+    font-size: 2.3vh;
 }
 
 .indexContent .indexTitle{
     color: black;
     transition: 0.5s;
     font-family: "Noto Sans SC", sans-serif;
-    font-size: 16px;
+    font-size: 2.3vh;
     text-decoration: none;
 }
 
@@ -146,15 +139,15 @@ p{
 
 .indexDescript{
     color: rgb(100,100,100);
-    font-size: 16px;
+    font-size: 2.3vh;
     font-family: "Noto Serif SC", serif;
 }
 
 .indexOverlay .closeButton {
     position: absolute;
-    right: 15px;
-    top: 5px;
-    font-size: 18px;
+    right: 2.1vh;
+    top: 0.7vh;
+    font-size: 2.6vh;
     font-family: "Noto Sans SC", sans-serif;
     color: black;
     text-decoration: none;
@@ -166,10 +159,10 @@ p{
     border: solid 0px;
     height: 30px;
     position: absolute;
-    left:15px;
-    top: 5px;
+    left:2.1vh;
+    top: 0.7vh;
     text-align: left;
-    font-size: 18px;
+    font-size: 2.6vh;
     color: black;
     transition: 0.5s;
 }
@@ -178,19 +171,19 @@ p{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    top: 20px;
+    top: 3vh;
     color: black;
-    font-size: 16px;
+    font-size: 2.3vh;
     font-family: "Noto Serif SC",serif;
     
 }
 
 .infoColumn{
     width: 50%;
-    padding: 0px 15px;
+    padding: 0px 2.1vh;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 70vh) {
     .infoContent {
         display: block;
     }
@@ -200,7 +193,7 @@ p{
 }
 
 .infoColumn .infoLink{
-    font-size: 16px;
+    font-size: 2.3vh;
     font-family: "Noto Sans SC",sans-serif;
     text-decoration: none;
     color: black;
@@ -230,10 +223,10 @@ p{
 
 .infoOverlay .closeButton {
     position: relative;
-    left: 15px;
-    top: 5px;
+    left: 2.1vh;
+    top: 0.7vh;
     font-family: "Noto Sans SC",sans-serif;
-    font-size: 18px;
+    font-size: 2.6vh;
     color: black;
     text-decoration: none;
     transition: 0.5s;
@@ -257,7 +250,7 @@ p{
 
 .projectTitle{
     color: white;
-    margin: 15px;
+    margin: 2.1vh;
 }
 
 .video{
@@ -292,7 +285,7 @@ p{
     animation-timing-function: ease;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 70vh) {
   .column {
     -ms-flex: 100%;
     flex: 100%;
@@ -366,7 +359,7 @@ p{
     color: white;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 16px;
+    font-size: 2.3vh;
     font-family: "Noto Sans SC", sans-serif;
 }
 

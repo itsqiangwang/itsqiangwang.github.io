@@ -143,43 +143,45 @@
                 </div>
             </div>
             
-            <video class="video" autoplay muted loop style="width: 100%">
+            <img class="image" style="width: 100%" src="UCLADMASI19/SI-19-Alphabet-Compiled"/>
+            
+            <video id="video" class="video" autoplay muted loop preload="none" style="width: 100%">
                 <source src="UCLADMASI19/SI-19-Alphabet-Compiled.mp4" type="video/mp4">
             </video>
             
-            <video class="video" autoplay muted loop style="width: 100%">
+            <video id="video" class="video" autoplay muted loop preload="none" style="width: 100%">
                 <source src="UCLADMASI19/SI-19-Alphabet-OneSet-Render.mp4" type="video/mp4">
             </video>
             
-            <video class="video" autoplay muted loop style="width: 100%">
+            <video id="video" class="video" autoplay muted loop preload="none" style="width: 100%">
                 <source src="UCLADMASI19/0_NEXT%20NATURE.mp4" type="video/mp4">
             </video>
             
-            <video class="video" autoplay muted loop style="width: 100%">
+            <video id="video" class="video" autoplay muted loop preload="none" style="width: 100%">
                 <source src="UCLADMASI19/5_UCLA%20DMA%20SUMMER%20INSTITUTE%202019.mp4" type="video/mp4">
             </video>
             
             <img class="image" src="UCLADMASI19/Web-1.gif"/>
             
-            <video class="video" autoplay muted loop style="width: 100%">
+            <video id="video" class="video" autoplay muted loop style="width: 100%">
                 <source src="UCLADMASI19/1_CURRICULUM.mp4" type="video/mp4">
             </video>
             
             <img class="image" src="UCLADMASI19/Web-2.gif"/>
             
-            <video class="video" autoplay muted loop style="width: 100%">
+            <video id="video" class="video" autoplay muted loop style="width: 100%">
                 <source src="UCLADMASI19/2_SCHEDULE.mp4" type="video/mp4">
             </video>
             
             <img class="image" src="UCLADMASI19/Web-3.gif"/>
             
-            <video class="video" autoplay muted loop style="width: 100%">
+            <video id="video" class="video" autoplay muted loop style="width: 100%">
                 <source src="UCLADMASI19/3_HOUSING+FEES.mp4" type="video/mp4">
             </video>
             
             <img class="image" src="UCLADMASI19/Web-4.gif"/>
             
-            <video class="video" autoplay muted loop style="width: 100%">
+            <video id="video" class="video" autoplay muted loop style="width: 100%">
                 <source src="UCLADMASI19/4_SCHOLARSHIPS+CONTACT.mp4" type="video/mp4">
             </video>
             
@@ -757,6 +759,42 @@
           $(document).ready(function () {
             $(window).trigger('scroll');
           });
+        });
+        
+        //lazyload
+//        $(document).ready(function(){
+//           $(window).scroll(lazyload);
+//           lazyload();
+//        });
+//        function lazyload(){
+//           var wt = $(window).scrollTop();    //* top of the window
+//           var wb = wt + $(window).height();  //* bottom of the window
+//
+//           $(".video").each(function(){
+//              var ot = $(this).offset().top;  //* top of object (i.e. advertising div)
+//              var ob = ot + $(this).height(); //* bottom of object
+//
+//              if(!$(this).attr("loaded") && wt<=ob && wb >= ot){
+//                 $(this).html("here goes the iframe definition");
+//                 $(this).attr("loaded",true);
+//              }
+//           });
+//        }
+            
+            $(document).ready(function(){
+            $(window).scroll(function() {
+                //check if your div is visible to user
+                // CODE ONLY CHECKS VISIBILITY FROM TOP OF THE PAGE
+                if ($(window).scrollTop() + $(window).height() >= $('#video').offset().top) {
+                    if(!$('#video').attr('loaded')) {
+                        //not in ajax.success due to multiple sroll events
+                        $('#video').attr('loaded', true);
+
+                        //ajax goes here
+                        //in theory, this code still may be called several times
+                    }
+                }
+            });
         });
 
         </script>
