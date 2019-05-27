@@ -58,7 +58,7 @@
     color: lightgray;
     font-family: 'IBM Plex Mono', sans-serif;
     font-weight: normal;
-    padding-bottom: 10pt;
+/*    padding-bottom: 10pt;*/
 }
 
 .projectContainer-left,
@@ -69,13 +69,13 @@
 .projectContainer-left-first{
     padding: 10pt;
     padding-right: 5pt;
-    padding-top: 0 !important;
+    padding-top: 10pt;
 }
 
 .projectContainer-right-first{
     padding: 10pt;
     padding-left: 5pt;
-    padding-top: 0 !important;
+    padding-top: 10pt;
 }
 
 .projectContainer-left-middle{
@@ -181,6 +181,10 @@
     .projectContainer-left h3,
     .projectContainer-right h3{
         padding-left: 10pt;
+        padding-bottom: 10pt;
+    }
+    
+    .projectTitle h3{
         padding-bottom: 10pt;
     }
 }
