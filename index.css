@@ -74,5 +74,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-    
+    .projectContainer-left img,
+    .projectContainer-right img{
+        opacity: 1;
+    }
 }

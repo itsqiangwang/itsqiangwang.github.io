@@ -68,5 +68,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-    
+    .previous img,
+    .next img{
+        opacity: 1;
+    }
 }
