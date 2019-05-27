@@ -1,376 +1,78 @@
-body {
-    background-color: black;
-    margin: 0;
+/*CSS for home page only*/
+
+@font-face {
+  font-family: self;
+  src: url('bretagne_self-modern_regular.otf');
 }
 
-* {
-    box-sizing: border-box;
-/*    scroll-behavior: smooth;*/
-}
-
-p{
-    margin: 0;
-}
-
-.menuBar{
-    border: solid 0px;
-    height: 6vh;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 1px 0.5px rgba(0,0,0,0.5);
-    transition: 0.5s;
-}
-
-.titleContainer{
-    border: solid 0px;
-    height: 6vh;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: 9;
-    background-color: white;
-    box-shadow: 0px -1px 0.5px rgba(0,0,0,0.5);
-}
-
-.title{
-    border: solid 0px;
-    line-height: 6vh;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 2.6vh;
-    font-family: "Noto Serif SC", serif;
-    color: black;
-    text-decoration: none;
-}
-
-.projectName{
-    display: none;
-}
-
-.divider{
-    background-color: white;
-    width: 100%;
-    height: 0.2vh;
-    margin: 7.5vh 0px 0px 0px;
-}
-
-.projectDetails{
-    color: white;;
-    font-size: 2.6vh;
-    font-family: "Noto Sans SC", sans-serif;
-    margin:2.1vh;
-    display: inline-block;
-}
-
-.projectDetails:hover{
-    cursor: pointer;
-}
-
-.projectDescription{
-    display: none;
-    background: white;
-    color: black;
-    padding: 1.5vh 2.1vh;
-    cursor: default;
-    font-family: "Noto Serif SC", serif;
-    font-size: 2.6vh;
-}
-
-.projectDetails:hover .projectDescription{
-    display: block;
-}
-
-.descriptionLink{
-    font-family: "Noto Sans SC", sans-serif;
-    color: black;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-.descriptionLink:hover{
-    color: #063098;
-    text-decoration: none;
-}
-
-.index {
-    font-family: "Noto Sans SC", sans-serif;
-    border: solid 0px;
-    height: 30px;
-    position: absolute;
-    right: 2.1vh;
-    top: 0.7vh;
-    font-size: 2.6vh;
-    color: black;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-.index:hover{
-    text-decoration: none;
-    color: #063098;
-    cursor: pointer;
-}
-
-.indexContent {
-    position: relative;
-    top: 7vh;
-    margin: 0 2.1vh;
-    color: dimgrey;
-    font-family: "Noto Serif SC", serif;
-    font-size: 2.3vh;
-}
-
-.indexContent .indexTitle{
-    color: black;
-    transition: 0.5s;
-    font-family: "Noto Sans SC", sans-serif;
-    font-size: 2.3vh;
-    text-decoration: none;
-}
-
-.indexContent .indexTitle:hover{
-    color: #063098;
-    text-decoration: none;
-}
-
-.indexDescript{
-    color: rgb(100,100,100);
-    font-size: 2.3vh;
-    font-family: "Noto Serif SC", serif;
-}
-
-.indexOverlay .closeButton {
-    position: absolute;
-    right: 2.1vh;
-    top: 0.7vh;
-    font-size: 2.6vh;
-    font-family: "Noto Sans SC", sans-serif;
-    color: black;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-.info {
-    font-family: "Noto Sans SC", sans-serif;
-    border: solid 0px;
-    height: 30px;
-    position: absolute;
-    left:2.1vh;
-    top: 0.7vh;
-    text-align: left;
-    font-size: 2.6vh;
-    color: black;
-    transition: 0.5s;
-}
-
-.infoContent {
+.projectContainer-whole{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     position: relative;
-    top: 3vh;
-    color: black;
-    font-size: 2.3vh;
-    font-family: "Noto Serif SC",serif;
+    top: 35pt;
+}
+
+.projectContainer-left,
+.projectContainer-right{
+    width: 50%;
+}
+
+.projectContainer-left-first{
+    padding: 10pt;
+    padding-right: 5pt;
+}
+
+.projectContainer-right-first{
+    padding: 10pt;
+    padding-left: 5pt;
+}
+
+.projectContainer-left-middle{
+    padding: 10pt;
+    padding-right: 5pt;
+    padding-top: 0 !important;
+}
+
+.projectContainer-right-middle{
+    padding: 10pt;
+    padding-left: 5pt;
+    padding-top: 0 !important;
+}
+
+.projectContainer-left h1,
+.projectContainer-right h1{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 16pt;
+    font-family: self, serif;
+}
+
+.projectContainer-left h3,
+.projectContainer-right h3{
+    margin: 0;
+    color: lightgray;
+    font-weight: normal;
+    font-size: 12pt;
+    font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.projectContainer-left img,
+.projectContainer-right img{
+    width: 100%;
+    opacity: 0.02;
+    transition: 0.5s;
+}
+
+.projectContainer-left img:hover,
+.projectContainer-right img:hover,
+.projectContainer-left video:hover,
+.projectContainer-right video:hover{
+    opacity: 1;
+    cursor:url('cursor/c-forward.png') 50 50, auto;
+}
+
+@media only screen and (max-width: 600px) {
     
-}
-
-.infoColumn{
-    width: 50%;
-    padding: 0px 2.1vh;
-}
-
-@media (max-width: 70vh) {
-    .infoContent {
-        display: block;
-    }
-    .infoColumn{
-        width: 100%;
-    }
-}
-
-.infoColumn .infoLink{
-    font-size: 2.3vh;
-    font-family: "Noto Sans SC",sans-serif;
-    text-decoration: none;
-    color: black;
-    transition: 0.5s;
-}
-
-.infoOverlay .infoLink:hover{
-    text-decoration: none;
-    color: #063098;
-}
-
-.info:hover{
-    cursor: pointer;
-    color: #063098;
-}
-
-.infoOverlay, .indexOverlay {
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(255,255,255, 0.85);
-}
-
-.infoOverlay .closeButton {
-    position: relative;
-    left: 2.1vh;
-    top: 0.7vh;
-    font-family: "Noto Sans SC",sans-serif;
-    font-size: 2.6vh;
-    color: black;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-.infoOverlay .closeButton:hover, .indexOverlay .closeButton:hover{
-    text-decoration: none;
-    color: #063098;
-}
-/*
-
-@media screen and (max-height: 450px) {
-  .infoOverlay a {font-size: 20px}
-  .infoOverlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
-*/
-
-.projectTitle{
-    color: white;
-    margin: 2.1vh;
-}
-
-.video{
-    width: 50%;
-    height: 50%;
-    min-width: 200px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-}
-
-.image{
-    width: 50%;
-    height: 50%;
-    min-width: 200px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-}
-
-.column {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-  max-width: 50%;
-  margin-left: auto; 
-  margin-right: auto;
-  display: block;
-}
-
-.column img, .column video {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto; 
-    margin-right: auto;
-    animation-name:imageAnimation;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-}
-
-@media screen and (max-width: 70vh) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-  .video, .image{
-    width: 100%;
-    height: auto;
-  }
-}
-
-.projectContainer{
-    animation-name:imageAnimation;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    opacity: 1;
-    position: relative;
-    top: 0px;
-}
-
-.imgContainer {
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    animation-name:imageAnimation;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    position: relative;
-    opacity: 1;
-}
-
-@keyframes imageAnimation{
-    from{
-        opacity: 0;
-        top: 50px;
-    }
-    to{
-        opacity: 1;
-        top: 0px;
-    }
-}
-
-.imgOverlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.imgOverlay:hover {
-    cursor: pointer;
-}
-
-.imgContainer:hover .imgOverlay{
-    opacity: 1;
-    background-color: rgba(0,0,0,0.85);
-}
-
-.imgOverlayContent{
-    color: white;
-    text-align: center;
-    position: relative;
-    top: 45%;
-}
-
-.imgOverlayContent a{
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 2.3vh;
-    font-family: "Noto Sans SC", sans-serif;
-}
-
-.imgOverlayContent a:hover{
-    color: #063098;
-    text-decoration: none;
 }

@@ -1,0 +1,90 @@
+.projectContainer-single{
+    display: block;
+    margin: 0 auto;
+}
+
+.projectTitle h3{
+    color: white;
+    font-size: 18pt;
+    margin: 0;
+    color: grey;
+}
+
+.projectContainer-left,
+.projectContainer-right{
+    width: 50%;
+}
+
+.projectContainer-left-first{
+    padding: 10pt;
+    padding-right: 5pt;
+    padding-bottom: 0;
+}
+
+.projectContainer-right-first{
+    padding: 10pt;
+    padding-left: 5pt;
+    padding-bottom: 0;
+}
+
+.projectContainer-left-middle{
+    padding: 10pt;
+    padding-right: 5pt;
+}
+
+.projectContainer-right-middle{
+    padding: 10pt;
+    padding-left: 5pt;
+}
+
+.projectContainer-left h1,
+.projectContainer-right h1{
+    margin: 0;
+    color: white;
+}
+
+.projectContainer-left h3,
+.projectContainer-right h3{
+    margin: 0;
+    color: grey;
+}
+
+.projectContainer-left img,
+.projectContainer-right img,
+.projectContainer-left video,
+.projectContainer-right video{
+    width: 100%;
+    opacity: 0.02;
+    transition: 0.5s;
+    display: block;
+}
+
+.projectContainer-left img:hover,
+.projectContainer-right img:hover,
+.projectContainer-left video:hover,
+.projectContainer-right video:hover,
+.projectContainer-single-top img:hover,
+.projectContainer-single-top video:hover,
+.projectContainer-single img:hover,
+.projectContainer-single video:hover{
+    opacity: 1;
+    cursor: url('../c-diagonal.png') 50 50, auto;
+}
+
+.projectInfoContainer{
+    width: 100%;
+    padding: 0 10pt 10pt 10pt;
+}
+
+.projectInfo p{
+    color: white;
+    font-size: 18pt;
+    margin: 0;
+}
+
+.projectInfo p span{
+    color: grey;
+    font-size: 12pt;
+    margin: 0;
+    display: block;
+}
