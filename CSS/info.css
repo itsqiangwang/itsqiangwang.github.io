@@ -6,22 +6,16 @@
 
 .bio-container{
 	width: 100%;
-	display: flex;
+}
+
+.capabilities{
+	width: 50%;
+	padding: 10px;
 }
 
 .bio{
-	width: 87.5%;
 	margin: 0;
 	padding: 10px;
 	line-height: 1.4;
 	font-size: 24px;
 }
-
-.bio-link{
-	width: 12.5%;
-	margin: 0;
-	padding: 10px;
-	line-height: 1.4;
-	text-align: right;
-}
-
