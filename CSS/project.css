@@ -119,13 +119,19 @@
 }
 
 @media only screen and (max-width:480px) {
- 	.project-type-year,
+ 	.project-text{
+  		flex-wrap: wrap;
+  	}
+  	.project-type-year,
 	.project-description{
-		width: 20%;
-		display: block;
+		width: 100%;
 	}
-	.project-text{
-		flex-wrap: wrap;
+	.project-description{
+		padding-left: 10px;
+	}
+	.full-height{
+		width: 100%;
+		height: auto;
 	}
 }
 
