@@ -1,0 +1,154 @@
+@font-face{
+    font-family: liberation sans;
+    src: url(typeface/LiberationSans-Regular.ttf);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    font-family: sans-serif;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.project-index{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.project-wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.project-name{
+    width: 50%;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+.project-type{
+    width: 37.5%;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+.project-date{
+    width: 12.5%;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    text-align: right;
+    padding: 10px;
+}
+
+.project-type span,
+.project-date span{
+    opacity: 1;
+}
+
+.navigation-container{
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%
+    );
+    z-index: 1;
+}
+
+.page,
+.info{
+    width: 50%;
+    padding: 10px;
+}
+
+.info{
+    text-align: right;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+.ren-ren-ren-vid,
+.graphite-vid,
+.alot-vid,
+.phoenix-vid,
+.q-vid,
+.snd-vid,
+.ntk-vid,
+.dmasi-vid,
+.rebecca-vid,
+.commencementmap-vid,
+.soaatshirt-vid,
+.wintergathering-vid,
+.careerdev-vid,
+.holidaycard-vid,
+.fallgathering-vid,
+.genesis-vid,
+.mechanics-vid,
+.portraits-vid,
+.illitera-vid,
+.weltformat-vid,
+.blankposter-vid,
+.chelseahotel-vid
+{
+    opacity: 0;
+    transition: 0.3s;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    width: 500px;
+    height: auto;
+}
+
+.ren-ren-ren:hover + .ren-ren-ren-vid,
+.graphite:hover + .graphite-vid,
+.alot:hover + .alot-vid,
+.phoenix:hover + .phoenix-vid,
+.q:hover + .q-vid,
+.snd:hover + .snd-vid,
+.ntk:hover + .ntk-vid,
+.dmasi:hover + .dmasi-vid,
+.rebecca:hover + .rebecca-vid,
+.commencementmap:hover + .commencementmap-vid,
+.soaatshirt:hover + .soaatshirt-vid,
+.wintergathering:hover + .wintergathering-vid,
+.careerdev:hover + .careerdev-vid,
+.holidaycard:hover + .holidaycard-vid,
+.fallgathering:hover + .fallgathering-vid,
+.genesis:hover + .genesis-vid,
+.mechanics:hover + .mechanics-vid,
+.portraits:hover + .portraits-vid,
+.illitera:hover + .illitera-vid,
+.weltformat:hover + .weltformat-vid,
+.blankposter:hover + .blankposter-vid,
+.chelseahotel:hover + .chelseahotel-vid{
+    opacity: 1;
+}
