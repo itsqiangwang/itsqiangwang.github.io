@@ -111,6 +111,10 @@ a{
     transform: translate(-50%,-50%);
 }
 
+.project-description:hover{
+    cursor: pointer;
+}
+
 .project-title{
     font-size: 64px;
     text-transform: uppercase;
@@ -125,6 +129,11 @@ a{
 }
 
 @media only screen and (max-width:480px) {
+    .project-thumb-container:hover img,
+    .project-thumb-container:hover video{
+        width: 100vw;
+        height: 100vh;
+    }
     img,
     video{
         filter: blur(0.1px);
@@ -142,8 +151,23 @@ a{
 }
 
 @media only screen and (min-width: 481px) and (max-width:768px) {
-    .content-item-full-height{
-        height: auto;
+    .project-thumb-container:hover img,
+    .project-thumb-container:hover video{
         width: 100vw;
+        height: 100vh;
+    }
+    img,
+    video{
+        filter: blur(0.1px);
+        display: block;
+        mix-blend-mode: difference;
+    }
+    .project-title{
+        font-size: 32px;
+    }
+
+    .project-info,
+    .project-date{
+        font-size: 16px;
     }
 }
