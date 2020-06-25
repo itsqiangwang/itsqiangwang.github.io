@@ -104,6 +104,10 @@ video{
     padding: 0px 15px;
 }
 
+.project-description span{
+    text-transform: uppercase;
+}
+
 .project-type,
 .project-date{
 	font-size: 32px;
@@ -170,12 +174,12 @@ a{
     text-decoration: none;
     position: relative;
     text-transform: uppercase;
-    opacity: 1;
+    opacity: 0.65;
     transition: 0.3s;
 }
 
 a:hover{
-    opacity: 0.5;
+    opacity: 1;
 }
 
 @media only screen and (max-width:480px) {

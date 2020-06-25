@@ -91,13 +91,13 @@ a{
 
 .info a,
 .page a{
-    opacity: 1;
+    opacity: 0.65;
     transition: 0.3s;
 }
 
 .info a:hover,
 .page a:hover{
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .project-description{
