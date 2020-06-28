@@ -14,7 +14,7 @@ body{
     padding: 0;
     animation-name: fadeIn;
     animation-duration: 2s;
-    font-family: sans-serif;
+    font-family: 'arial', sans-serif;
     line-height: 1.2;
 }
 
