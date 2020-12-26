@@ -7,33 +7,25 @@
     <!--Favicon-->
     <link rel="shortcut icon" type="image/png" href="../../063098.png"/>
     <title>D.I.Y</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172751990-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-172751990-1');
-    </script>
 </head>
 
 <body>
     <div class="navigation-container">
         <div class="index">
-            <a href="../../index.html">
+            <a href="../../index.html" class="home"></a>
+            <a onclick="infoToggle()">
                 Qiang Wang
             </a>
+            <span id="info-content">
+                is a Los Angeles-based designer from Fujian, China. 
+                he makes identities, posters, print publications, websites, and animations with a focus on typography. you can <a href="mailto:itsqiangwang@gmail.com" target="_blank">get in touch</a> or <a href="../../resume/qiangwang-resume-july2020.pdf" target="_blank">
+                download his résumé</a>.
+            </span>
         </div>
         <div class="title">
-            <a href="">
+            <span>
                 D.I.Y
-            </a>
-        </div>
-        <div class="info">
-            <a href="../../info/index.html">
-                info
-            </a>
+            </span>
         </div>
     </div>
 
@@ -44,9 +36,12 @@
         <div class="project-info-container">
             <div class="project-info">
                 <div class="project-description">
-                    Select issues for <a href="https://d-i-y.website/" target="_blank">D.I.Y</a>, an independent publishing project that explores the book as a container for ideas. Each issue is published as a downloadable PDF file that can be printed and assembled at home.
+                    Select issues for <a href="https://d-i-y.website/" target="_blank">D.I.Y</a>, an independent publishing project that explores the book as a container for ideas. <span>d.i.y</span> stands for <span>does it interest you</span> and refers to the way these publications materialize (printed and assembled by the readers themselves) as well as the goal of this project (to serve as a container for my experimentations and explorations with ideas). all publications are designed in black and white to reduce printing cost and assembled using the slot-and-tab method, which only requires a ruler and a pair of scissors.
                 </div>
-                <div class="project-type">Print publication
+                <div class="project-type">
+                    Print publication
+                    <br>
+                    8.5 in. X 11 in. | 30 pages | number of copies vary | slot-and-tab binding
                 </div>
                 <div class="project-date">June 2020</div>
             </div>
@@ -140,4 +135,4 @@
     </body>
     </html>
 
-    <script> </script>
+<script src="../../js/infoToggle.js" type="text/javascript"></script>

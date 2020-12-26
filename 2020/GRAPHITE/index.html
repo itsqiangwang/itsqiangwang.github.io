@@ -7,33 +7,25 @@
     <!--Favicon-->
     <link rel="shortcut icon" type="image/png" href="../../063098.png"/>
     <title>GRAPHITE 11</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172751990-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-172751990-1');
-    </script>
 </head>
 
 <body>
     <div class="navigation-container">
         <div class="index">
-            <a href="../../index.html">
+            <a href="../../index.html" class="home"></a>
+            <a onclick="infoToggle()">
                 Qiang Wang
             </a>
+            <span id="info-content">
+                is a Los Angeles-based designer from Fujian, China. 
+                he makes identities, posters, print publications, websites, and animations with a focus on typography. you can <a href="mailto:itsqiangwang@gmail.com" target="_blank">get in touch</a> or <a href="../../resume/qiangwang-resume-july2020.pdf" target="_blank">
+                download his résumé</a>.
+            </span>
         </div>
         <div class="title">
-            <a href="">
+            <span>
                 GRAPHITE 11
-            </a>
-        </div>
-        <div class="info">
-            <a href="../../info/index.html">
-                info
-            </a>
+            </span>
         </div>
     </div>
 
@@ -46,9 +38,13 @@
     <div class="project-info-container">
             <div class="project-info">
                 <div class="project-description">
-                    Publication for <a href="https://graphitejournal.com" target="_blank">GRAPHITE</a>, a Los Angeles-based arts organization dedicated to producing critical and creative projects. Its 11th issue <i>Fruit</i> focuses on anti-imperialist and intersectional narratives. Read a digital version of the book <a href="https://issuu.com/graphitejournal/docs/graphite_xi" target="_blank">here</a>.
+                    Publication for <a href="https://graphitejournal.com" target="_blank">GRAPHITE</a>, a Los Angeles-based arts organization dedicated to producing critical and creative projects. Its 11th issue <i>Fruit</i> focuses on anti-imperialist and intersectional narratives. the publication presents each contribution from the 34 artists as individual pieces of fruit, with a full-bleed snapshot of their work as the skin and the detailed content of their work as the core.
+                    Read a digital version of the book <a href="https://issuu.com/graphitejournal/docs/graphite_xi" target="_blank">here</a>.
                 </div>
-                <div class="project-type">Print publication
+                <div class="project-type">
+                    Print publication
+                    <br>
+                    7 in. X 10 in. | 186 pages | perfect binding
                 </div>
                 <div class="project-date">May 2020</div>
             </div>
@@ -97,4 +93,4 @@
     </body>
     </html>
 
-    <script> </script>
+    <script src="../../js/infoToggle.js" type="text/javascript"></script>

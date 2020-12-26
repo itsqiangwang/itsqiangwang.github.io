@@ -36,17 +36,27 @@ body{
     mix-blend-mode: difference;
 }
 
+.home{
+    padding: 0 8.5px;
+    background-color: white;
+    margin-right: 16px;
+}
+
 .page{
-    width: 75%;
+    width: 50%;
     padding: 15px;
     font-size: 16px;
 }
 
-.info{
-    width: 25%;
+.page span{
+    text-transform: lowercase;
+}
+
+.contact{
+    width: 50%;
     text-align: right;
     padding: 15px;
-    font-size: 16px;
+    font-size: 32px;
 }
 
 .project-thumb-container{
@@ -78,19 +88,25 @@ video{
 }
 
 a{
+    cursor: pointer;
     color: white;
     text-decoration: none;
     position: relative;
     text-transform: uppercase;
 }
 
-.info a,
+#info-content{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.contact a,
 .page a{
     opacity: 0.65;
     transition: 0.3s;
 }
 
-.info a:hover,
+.contact a:hover,
 .page a:hover{
     opacity: 1;
 }
@@ -123,6 +139,10 @@ a{
     padding: 0 15px;
 }
 
+.info-content{
+    color: white;
+    padding: 16px;
+}
 
 @media only screen and (max-width:480px) {
     .project-thumb-container:hover img,

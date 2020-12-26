@@ -7,33 +7,25 @@
     <!--Favicon-->
     <link rel="shortcut icon" type="image/png" href="../../063098.png"/>
     <title>PHOENIX</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172751990-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-172751990-1');
-    </script>
 </head>
 
 <body>
     <div class="navigation-container">
         <div class="index">
-            <a href="../../index.html">
+            <a href="../../index.html" class="home"></a>
+            <a onclick="infoToggle()">
                 Qiang Wang
             </a>
+            <span id="info-content">
+                is a Los Angeles-based designer from Fujian, China. 
+                he makes identities, posters, print publications, websites, and animations with a focus on typography. you can <a href="mailto:itsqiangwang@gmail.com" target="_blank">get in touch</a> or <a href="../../resume/qiangwang-resume-july2020.pdf" target="_blank">
+                download his résumé</a>.
+            </span>
         </div>
         <div class="title">
-            <a href="">
+            <span>
                 PHOENIX
-            </a>
-        </div>
-        <div class="info">
-            <a href="../../info/index.html">
-                info
-            </a>
+            </span>
         </div>
     </div>
 
@@ -44,9 +36,12 @@
     <div class="project-info-container">
             <div class="project-info">
                 <div class="project-description">
-                    Identity for a work-in-progress dance performance by <a href="https://www.selcouth.info/" target="_blank">Selcouth Movement</a>, a contemporary dance company found by dancer and choreographer <a href="https://www.wacd.ucla.edu/people/graduate-students/marianna-varviani" target="_blank">Marianna Varviani</a>.
+                    Identity for <span>phoenix</span>, a work-in-progress dance performance by <a href="https://www.selcouth.info/" target="_blank">Selcouth Movement</a>, a contemporary dance company found by dancer and choreographer <a href="https://www.wacd.ucla.edu/people/graduate-students/marianna-varviani" target="_blank">Marianna Varviani</a>. the identity features ascending o's, symbolizing the cyclical life pattern of a phoenix.
                 </div>
-                <div class="project-type">Identity, poster, postcard, program, animation
+                <div class="project-type">
+                    Identity, poster, postcard, program, animation
+                    <br>
+                    poster x 10, 12 in. x 18 in. | postcard x 100, 4 in. x 6 in. | program x 150, 5.5 in. x 8.5 in.
                 </div>
                 <div class="project-date">February 2020</div>
             </div>
@@ -78,8 +73,8 @@
 
     <div class="btm-navigation-container">
         <div class="previous">
-            <a href="../../2019/SUMMER-INSTITUTE/index.html">
-                UCLA DMA SUMMER INSTITUTE
+            <a href="../../2019/SND/index.html">
+                Stefanie Nelson Dancegroup / Dance Italia
             </a>
         </div>
         <div class="next">
@@ -91,4 +86,4 @@
     </body>
     </html>
 
-    <script> </script>
+    <script src="../../js/infoToggle.js" type="text/javascript"></script>

@@ -26,6 +26,19 @@ body{
     display: none;
 }
 
+.home{
+    padding: 0 8.5px;
+    background-color: white;
+    margin-right: 16px;
+}
+
+#info-content{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    text-transform: lowercase;
+}
+
 .navigation-container{
     position: fixed;
     top: 0;
@@ -37,22 +50,20 @@ body{
 }
 
 .index{
-    width: 33.333333%;
+    width: 50%;
     padding: 15px;
     font-size: 16px;
 }
 
 .title{
-    width: 33.333333%;
+    width: 50%;
     padding: 15px;
-    font-size: 16px;
-    text-align: center;
+    font-size: 32px;
+    text-align: right;
+    text-transform: lowercase;
 }
 
-.info{
-    width: 33.333333%;
-    text-align: right;
-    padding: 15px;
+.title a{
     font-size: 16px;
 }
 
@@ -89,7 +100,7 @@ video{
     height: 100vh;
     color: white;
 	text-transform: lowercase;
-    text-align: center;
+    text-align: left;
 }
 
 .project-info{
@@ -100,7 +111,7 @@ video{
 }
 
 .project-description{
-    font-size: 64px;
+    font-size: 32px;
     padding: 0px 15px;
 }
 
@@ -110,7 +121,11 @@ video{
 
 .project-type,
 .project-date{
-	font-size: 32px;
+	font-size: 16px;
+}
+
+.project-date{
+    padding: 0 15px;
 }
 
 .project-type{
@@ -120,6 +135,11 @@ video{
 .content-item-full-height{
 	height: 100vh;
 	width: auto;
+}
+
+.content-item-full-width{
+    width: 100vw;
+    height: auto;
 }
 
 .embed-container{
@@ -139,11 +159,6 @@ video{
     left: 0;
     height: 100%;
     width: 100%;
-}
-
-.content-item-full-width{
-	width: 100vw;
-	height: auto;
 }
 
 .btm-navigation-container{
@@ -176,6 +191,7 @@ a{
     text-transform: uppercase;
     opacity: 0.65;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 a:hover{
@@ -193,9 +209,9 @@ a:hover{
         width: 100vw;
     }
 
-    .project-description{
+/*    .project-description{
         font-size: 32px;
-    }
+    }*/
 
     .project-media-container{
         padding: 30px 0px;
@@ -226,9 +242,9 @@ a:hover{
         width: 100vw;
     }
 
-    .project-description{
+/*    .project-description{
         font-size: 32px;
-    }
+    }*/
 
     .project-media-container{
         padding: 30px 0px;

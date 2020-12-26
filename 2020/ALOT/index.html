@@ -7,33 +7,25 @@
     <!--Favicon-->
     <link rel="shortcut icon" type="image/png" href="../../063098.png"/>
     <title>A LOT _________</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172751990-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-172751990-1');
-    </script>
 </head>
 
 <body>
     <div class="navigation-container">
         <div class="index">
-            <a href="../../index.html">
+            <a href="../../index.html" class="home"></a>
+            <a onclick="infoToggle()">
                 Qiang Wang
             </a>
+            <span id="info-content">
+                is a Los Angeles-based designer from Fujian, China. 
+                he makes identities, posters, print publications, websites, and animations with a focus on typography. you can <a href="mailto:itsqiangwang@gmail.com" target="_blank">get in touch</a> or <a href="../../resume/qiangwang-resume-july2020.pdf" target="_blank">
+                download his résumé</a>.
+            </span>
         </div>
         <div class="title">
-            <a href="">
+            <span>
                 A LOT _________
-            </a>
-        </div>
-        <div class="info">
-            <a href="../../info/index.html">
-                info
-            </a>
+            </span>
         </div>
     </div>
 
@@ -44,9 +36,12 @@
     <div class="project-info-container">
             <div class="project-info">
                 <div class="project-description">
-                    A publication that explores the social and public potential of parking lots – a salient yet underutilized feature of the modern American landscape.
+                    A LOT _________ is a publication that explores the social and public potential of parking lots – a salient yet underutilized feature of the modern American landscape. all photographs were taken on a parking lot that used to be a popular drive-in theater, now repurposed as a weekly <a href="https://www.google.com/maps/place/Rosemead+Swap+Meet/@34.0651562,-118.1280625,13z/data=!4m5!3m4!1s0x80c2d089ca311e9b:0xf22417fed9b03155!8m2!3d34.0582505!4d-118.0613136" target="_blank">flea market</a>. the publication investigates the physicality of this space and documents the human as well as the material culture within this microcosm. A LOT _________ encourages its viewers/readers to think about the potentials of a parking lot.
                 </div>
-                <div class="project-type">Print publication, Photography
+                <div class="project-type">
+                    Print publication, Photography
+                    <br>
+                    5 in. X 10 in. | 99 pages | 9 copies | spiral binding
                 </div>
                 <div class="project-date">March 2020</div>
             </div>
@@ -121,4 +116,4 @@
     </body>
     </html>
 
-    <script> </script>
+    <script src="../../js/infoToggle.js" type="text/javascript"></script>
