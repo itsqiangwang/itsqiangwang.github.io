@@ -5,6 +5,21 @@ html, body{
     background-color: #063098;
 }
 
+.construction-note{
+    font-family: sans-serif;
+    color: lightgrey;
+}
+
+.construction-note a{
+    color: lightgrey;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.construction-note a:hover{
+    color: #063098;
+}
+
 .main-container{
     width: 100vw;
     height: 100vh;
@@ -14,6 +29,7 @@ html, body{
     border-bottom: 1px solid #063098;
     box-sizing: border-box;
     overflow: hidden;
+    display: none;
 }
 
 .info-container{
@@ -47,7 +63,7 @@ html, body{
 }
 
 .info-i span{
-    border: 2px solid #063098;
+    border: 1px solid #063098;
     width: 36px;
     height: 36px;
     border-radius: 100%;
@@ -64,15 +80,34 @@ html, body{
     display: none;
 }
 
-.info-content div{
-    font-size: 36px;
-    text-transform: lowercase;
-    padding: 10px;
-    text-align: left;
-}
-
 .info-container:hover .info-content{
     display: block;
+}
+
+.info-content .note-to-visitor{
+    font-size: 36px;
+    padding: 10px;
+    text-align: left;
+    margin: 0;
+}
+
+.info-content .colophon{
+    font-size: 18px;
+    padding: 10px;
+    text-align: left;
+    margin: 0;
+}
+
+.info-content .colophon a{
+    filter: blur(1.5px);
+}
+
+.info-content .colophon .monospace{
+    font-family: monospace;
+}
+
+.info-content .hide-desktop{
+    display: none;
 }
 
 .row-col-container{
@@ -95,7 +130,6 @@ denominator will vary by number of columns
     border-right: 1px solid #063098;
     border-top: 1px solid #063098;
     box-sizing: border-box;
-    /*transition: 1s;*/
 }
 
 .col-container:hover{
@@ -108,7 +142,7 @@ denominator will vary by number of rows
 */
 
 .col-container:nth-of-type(1) .row-container{
-    height: calc(100% / 3);
+    height: calc(100% / 4);
 }
 
 .row-container{
@@ -117,7 +151,6 @@ denominator will vary by number of rows
     height: 20%;
     border-bottom: 1px solid #063098;
     box-sizing: border-box;
-    /*transition: 1s;*/
 }
 
 .row-container:hover{
@@ -147,6 +180,7 @@ denominator will vary by number of rows
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     padding: 10px;
     font-size: 10px;
     font-family: sans-serif;
@@ -192,13 +226,13 @@ denominator will vary by number of rows
 .project-info{
     width: 100%;
     display: none;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     color: lightgrey;
     font-family: sans-serif;
-    position: sticky;
-    top: 0;
     mix-blend-mode: difference;
     z-index: 2;
+    position: sticky;
+    top: 0;
 }
 
 .row-item-container:hover .project-info{
@@ -207,8 +241,8 @@ denominator will vary by number of rows
 
 .project-title,
 .project-date{
-    width: 50%; 
-    padding: 5px 10px 10px 10px;
+    width: 50%;
+    padding: 5px 10px;
     font-size: 48px;
     line-height: 1;
     box-sizing: border-box;
@@ -269,8 +303,6 @@ denominator will vary by number of rows
 .two > div,
 .three > div{
     margin: 10px;
-   /* transform: scale(0.5);
-    opacity: 0.5;*/
 }
 
 .one div div iframe,
@@ -306,7 +338,6 @@ denominator will vary by number of rows
     margin: 0;
     padding: 0px 10px 10px 10px;
     font-size: 36px;
-    text-transform: lowercase;
     color: lightgrey;
     font-family: sans-serif;
 }
@@ -325,6 +356,7 @@ mobile view
     }
     .main-container{
         flex-wrap: wrap;
+        overflow-y: scroll;
     }
     .info-container{
         width: 100%;
@@ -351,12 +383,30 @@ mobile view
     .info-content a{
         filter: blur(1.5px);
     }
+    .info-content .show-desktop{
+        display: none;
+    }
+    .info-content .hide-desktop{
+        display: inline;
+    }
     .row-col-container{
         width: 100%;
         height: 95%;
+        flex-wrap: wrap;
+    }
+    .col-container{
+        width:100%;
+        height: auto;
+    }
+    .row-container{
+        height: calc(100vh / 2) !important;
+    }
+    .row-container:hover{
+        order: 0;
+        z-index: 2;
     }
     .thumb-container{
-        filter: blur(12.5px);
+        filter: blur(15px);
     }
     .filler{
         display: none;
@@ -372,19 +422,17 @@ mobile view
     }
     .project-title,
     .project-date{
-        width: 100%;
-        text-align: left;
         font-size: 24px;
-        padding: 0px 10px;
-    }
-    .project-title{
-        padding-top: 10px;
+        padding: 10px;
     }
     .project-description p{
         font-size: 18px;
     }
     .project-code{
-        display: none;
+        font-size: 36px;
+    }
+    .project-code div{
+        font-size: 18px;
     }
 }
 
@@ -397,6 +445,7 @@ tablet view
     }
     .main-container{
         flex-wrap: wrap;
+        overflow-y: scroll;
     }
     .info-container{
         width: 100%;
@@ -409,7 +458,7 @@ tablet view
         height: 50%;
     }
     .info-i{
-        font-size: 16.5px;
+        font-size: 15px;
         padding: 5px 0px;
     }
     .info-i span{
@@ -423,12 +472,30 @@ tablet view
     .info-content a{
         filter: blur(1.5px);
     }
+    .info-content .show-desktop{
+        display: none;
+    }
+    .info-content .hide-desktop{
+        display: inline;
+    }
     .row-col-container{
         width: 100%;
         height: 95%;
+        flex-wrap: wrap;
+    }
+    .col-container{
+        width:100%;
+        height: auto;
+    }
+    .row-container{
+        height: calc(100vh / 2) !important;
+    }
+    .row-container:hover{
+        order: 0;
+        z-index: 2;
     }
     .thumb-container{
-        filter: blur(12.5px);
+        filter: blur(15px);
     }
     .filler{
         display: none;
@@ -444,18 +511,16 @@ tablet view
     }
     .project-title,
     .project-date{
-        width: 100%;
-        text-align: left;
         font-size: 24px;
-        padding: 0px 10px;
-    }
-    .project-title{
-        padding-top: 10px;
+        padding: 10px;
     }
     .project-description p{
         font-size: 18px;
     }
     .project-code{
-        display: none;
+        font-size: 36px;
+    }
+    .project-code div{
+        font-size: 18px;
     }
 }
