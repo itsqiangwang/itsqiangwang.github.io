@@ -1,0 +1,461 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #063098;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    border-left: 1px solid #063098;
+    border-bottom: 1px solid #063098;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.info-container{
+    width: 5%;
+    height: 100%;
+    border-right: 1px solid #063098;
+    border-top: 1px solid #063098;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    overflow-y: hidden;
+    background-color: lightgrey;
+}
+
+.info-container:hover{
+    width: 200vw;
+    overflow-y: scroll;
+}
+
+.info-i{
+    font-size: 32px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid transparent;
+    position: sticky;
+    top: 0;
+    background: lightgrey;
+    color: #063098;
+}
+
+.info-i span{
+    border: 2px solid #063098;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.info-container:hover .info-i{
+    border-bottom: 1px solid #063098;
+}
+
+.info-content{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.info-content div{
+    font-size: 36px;
+    text-transform: lowercase;
+    padding: 10px;
+    text-align: left;
+}
+
+.info-container:hover .info-content{
+    display: block;
+}
+
+.row-col-container{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*
+the width value for .col-container is to be changed with updates
+denominator will vary by number of columns
+*/
+
+.col-container{
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid #063098;
+    border-top: 1px solid #063098;
+    box-sizing: border-box;
+    /*transition: 1s;*/
+}
+
+.col-container:hover{
+    width: 200vw;
+}
+
+/*
+the height value for every row container (.row-container) in the first column (.col-container) is to be changed with updates
+denominator will vary by number of rows
+*/
+
+.col-container:nth-of-type(1) .row-container{
+    height: calc(100% / 3);
+}
+
+.row-container{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #063098;
+    box-sizing: border-box;
+    /*transition: 1s;*/
+}
+
+.row-container:hover{
+    height: 100vh !important;
+    order: -1;
+    border-bottom: 0px;
+}
+
+.row-bottom{
+    border-bottom: 0px !important;
+}
+
+.row-item-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: lightgrey;
+    position: relative;
+}
+
+.row-item-container:hover{
+    overflow-y: scroll;
+    background-color: black;
+}
+
+.project-code{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 10px;
+    font-family: sans-serif;
+    line-height: 1.1;
+    display: block;
+    text-transform: uppercase;
+    z-index: 1;
+    color: lightgrey;
+    mix-blend-mode: difference;
+}
+
+.project-code div{
+    opacity: 0.5;
+    text-transform: lowercase;
+}
+
+.row-item-container:hover .project-code{
+    display: none;
+}
+
+.thumb-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    filter: blur(50px);
+    transition: 1s;
+}
+
+.row-item-container:hover .thumb-container{
+    filter: blur(0px);
+}
+
+.thumb-container video,
+.thumb-container img{
+    display: block;
+    width: 100%;
+}
+
+.project-info{
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    color: lightgrey;
+    font-family: sans-serif;
+    position: sticky;
+    top: 0;
+    mix-blend-mode: difference;
+    z-index: 2;
+}
+
+.row-item-container:hover .project-info{
+    display: flex;
+}
+
+.project-title,
+.project-date{
+    width: 50%; 
+    padding: 5px 10px 10px 10px;
+    font-size: 48px;
+    line-height: 1;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.project-date{
+    text-align: right;
+}
+
+.project-description a,
+.info-content a{
+    color: lightgrey;
+    text-decoration: none;
+    filter: blur(3px);
+    transition: 1s;
+}
+
+.info-content a{
+    color: black;
+}
+
+.project-description a:hover,
+.info-content a:hover{
+    filter: blur(0px);
+}
+
+.project-content{
+    width: 100%;
+    display: none;
+}
+
+.row-item-container:hover .project-content{
+    display: block;
+}
+
+.one,
+.two,
+.three{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.one > div{
+    width: 100%;
+}
+
+.two > div{
+    width: 50%;
+}
+
+.three > div{
+    width: 33.33333%;
+}
+
+.one > div,
+.two > div,
+.three > div{
+    margin: 10px;
+   /* transform: scale(0.5);
+    opacity: 0.5;*/
+}
+
+.one div div iframe,
+.two div div iframe,
+.three div div iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.one div img,
+.one div video,
+.two div img,
+.two div video,
+.three div img,
+.three div video{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-description{
+    width: 100%;
+    display: none;
+    position: relative;
+    z-index: 3;
+    mix-blend-mode: difference;
+}
+
+.project-description p{
+    margin: 0;
+    padding: 0px 10px 10px 10px;
+    font-size: 36px;
+    text-transform: lowercase;
+    color: lightgrey;
+    font-family: sans-serif;
+}
+
+.row-item-container:hover .project-description{
+    display: block;
+}
+
+
+/*
+mobile view
+*/
+@media only screen and (max-width:480px) {
+    html,body{
+        overflow-y: visible;
+    }
+    .main-container{
+        flex-wrap: wrap;
+    }
+    .info-container{
+        width: 100%;
+        height: 5%;
+    }
+    .info-container:hover{
+        height: 50%;
+    }
+    .info-container:hover + .row-col-container{
+        height: 50%;
+    }
+    .info-i{
+        font-size: 16.5px;
+        padding: 5px 0px;
+    }
+    .info-i span{
+        width: 18px;
+        height: 18px;
+    }
+    .info-content div{
+        font-size: 18px;
+    }
+    .project-description a,
+    .info-content a{
+        filter: blur(1.5px);
+    }
+    .row-col-container{
+        width: 100%;
+        height: 95%;
+    }
+    .thumb-container{
+        filter: blur(12.5px);
+    }
+    .filler{
+        display: none;
+    }
+    .three > div,
+    .two > div{
+        width: 100%;
+    }
+    .one,
+    .two,
+    .three{
+        flex-wrap: wrap;
+    }
+    .project-title,
+    .project-date{
+        width: 100%;
+        text-align: left;
+        font-size: 24px;
+        padding: 0px 10px;
+    }
+    .project-title{
+        padding-top: 10px;
+    }
+    .project-description p{
+        font-size: 18px;
+    }
+    .project-code{
+        display: none;
+    }
+}
+
+/*
+tablet view
+*/
+@media only screen and (min-width: 481px) and (max-width:768px) {
+    html,body{
+        overflow-y: visible;
+    }
+    .main-container{
+        flex-wrap: wrap;
+    }
+    .info-container{
+        width: 100%;
+        height: 5%;
+    }
+    .info-container:hover{
+        height: 50%;
+    }
+    .info-container:hover + .row-col-container{
+        height: 50%;
+    }
+    .info-i{
+        font-size: 16.5px;
+        padding: 5px 0px;
+    }
+    .info-i span{
+        width: 18px;
+        height: 18px;
+    }
+    .info-content div{
+        font-size: 18px;
+    }
+    .project-description a,
+    .info-content a{
+        filter: blur(1.5px);
+    }
+    .row-col-container{
+        width: 100%;
+        height: 95%;
+    }
+    .thumb-container{
+        filter: blur(12.5px);
+    }
+    .filler{
+        display: none;
+    }
+    .three > div,
+    .two > div{
+        width: 100%;
+    }
+    .one,
+    .two,
+    .three{
+        flex-wrap: wrap;
+    }
+    .project-title,
+    .project-date{
+        width: 100%;
+        text-align: left;
+        font-size: 24px;
+        padding: 0px 10px;
+    }
+    .project-title{
+        padding-top: 10px;
+    }
+    .project-description p{
+        font-size: 18px;
+    }
+    .project-code{
+        display: none;
+    }
+}
