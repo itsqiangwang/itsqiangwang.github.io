@@ -135,6 +135,12 @@ mobile view
         max-width: 100%;
         max-height: 100%;
     }
+
+    details[open] summary:hover,
+    details summary:hover{
+        color: rgba(06,30,98,1);
+        margin-left: 18pt;
+    }
 }
 
 /*
@@ -151,5 +157,11 @@ tablet view
     details video:hover{
         max-width: 100%;
         max-height: 100%;
+    }
+
+    details[open] summary:hover,
+    details summary:hover{
+        color: rgba(06,30,98,1);
+        margin-left: 18pt;
     }
 }
