@@ -10,11 +10,11 @@ let detailsSelected;
 //open a selected 'details' tag
 detailsSelected = document.getElementsByTagName('details')[detailsChosenNumber];
 detailsSelected.setAttribute('open','true');
-detailsSelected.scrollIntoView({
-    block: 'start',
-    inline: 'start',
-    behavior: 'smooth'
-});
+// detailsSelected.scrollIntoView({
+//     block: 'start',
+//     inline: 'start',
+//     behavior: 'smooth'
+// });
 
 console.log('detailsTotal: ' + detailsTotal);
 console.log('detailsChosenNumber: ' + detailsChosenNumber);
