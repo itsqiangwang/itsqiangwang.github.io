@@ -95,6 +95,15 @@ details[open] summary:hover{
     color: rgba(0,0,0,0.5);
 }
 
+details figure {
+    display: none;
+    margin-bottom: 18pt;
+}
+
+details[open] figure{
+    display: block;
+}
+
 details img,
 details video{
     display: block;
@@ -109,15 +118,6 @@ details img:hover,
 details video:hover{
     max-width: 75vw;
     max-height: 75vh;
-}
-
-details figure {
-    display: none;
-    margin-bottom: 18pt;
-}
-
-details[open] figure{
-    display: block;
 }
 
 /*
