@@ -48,13 +48,12 @@ summary{
     font-size: 14pt;
     font-family: 'Arial', sans-serif;
     transition: 0.3s;
-    text-indent: -18pt;
-    margin: 1pt 4pt 1pt 18pt;
+    text-indent: -52pt;
+    margin: 1pt 4pt 1pt 52pt;
     padding: 1pt 0;
 }
 
 summary:hover{
-    margin-left: 30pt;
     cursor: pointer;
     color: rgba(06,30,98,0.5);
 }
@@ -86,6 +85,7 @@ details[open] {
 }
 
 details[open] summary{
+    text-indent: -18pt;
     margin-left: 18pt;
     background-color: lightgrey;
     color: rgba(06,30,98,1);
@@ -139,7 +139,6 @@ mobile view
     details[open] summary:hover,
     details summary:hover{
         color: rgba(06,30,98,1);
-        margin-left: 18pt;
     }
 }
 
@@ -162,6 +161,5 @@ tablet view
     details[open] summary:hover,
     details summary:hover{
         color: rgba(06,30,98,1);
-        margin-left: 18pt;
     }
 }
