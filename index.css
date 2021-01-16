@@ -54,6 +54,7 @@ summary{
 }
 
 summary:hover{
+    margin-left: 65pt;
     cursor: pointer;
     color: rgba(06,30,98,0.5);
 }
@@ -140,6 +141,14 @@ mobile view
     details summary:hover{
         color: rgba(06,30,98,1);
     }
+
+    details summary:hover{
+        margin-left: 52pt;
+    }
+
+    details[open] summary:hover{
+        margin-left: 18pt;
+    }
 }
 
 /*
@@ -161,5 +170,13 @@ tablet view
     details[open] summary:hover,
     details summary:hover{
         color: rgba(06,30,98,1);
+    }
+
+    details summary:hover{
+        margin-left: 52pt;
+    }
+
+    details[open] summary:hover{
+        margin-left: 18pt;
     }
 }
