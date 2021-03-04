@@ -82,13 +82,13 @@ details>*:not(summary){
 }
 
 details[open] {
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
 }
 
 details[open] summary{
     text-indent: -18pt;
     margin-left: 18pt;
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
     color: rgba(06,30,98,1);
 }
 
