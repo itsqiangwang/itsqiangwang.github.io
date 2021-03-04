@@ -88,6 +88,7 @@ details[open] {
 details[open] summary{
     text-indent: -18pt;
     margin-left: 18pt;
+    background-color: white;
     /*background-color: lightgrey;*/
     color: rgba(06,30,98,1);
 }
