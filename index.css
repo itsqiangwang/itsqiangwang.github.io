@@ -254,4 +254,8 @@ tablet view
     details[open] summary:hover{
         margin-left: 18pt;
     }
+
+    #gallery figure{
+        width: 50%;
+    }
 }
