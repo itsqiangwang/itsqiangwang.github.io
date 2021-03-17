@@ -151,17 +151,17 @@ details video{
     display: block;
     outline: none;
     margin: 18pt 0;
-    /* max-width: calc(100vw / 10);
-    max-height: calc(100vh / 10); */
-    max-width: 75vw;
-    max-height: 75vh;
+    max-width: calc(100vw / 3);
+    max-height: calc(100vh / 3);
+    /* max-width: 75vw;
+    max-height: 75vh; */
     transition: 0.3s;
 }
 
 details img:hover,
 details video:hover{
-    /* max-width: 75vw;
-    max-height: 75vh; */
+    max-width: 75vw;
+    max-height: 75vh;
 }
 
 /*
