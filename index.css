@@ -5,12 +5,7 @@ html, body{
     margin: 0;
     padding: 0;
     letter-spacing: 0.5pt;
-    /* background-color: lightgrey; */
-    scrollbar-width: none;
-}
-
-::-webkit-scrollbar{
-    display: none;
+    /*background-color: lightgrey;*/
 }
 
 a{
@@ -126,14 +121,15 @@ details>*:not(summary){
     margin: 0 18pt;
 }
 
-/* details[open] {
-    background-color: white;
-} */
+details[open] {
+    /*background-color: lightgrey;*/
+}
 
 details[open] summary{
     text-indent: -18pt;
     margin-left: 18pt;
     background-color: white;
+    /*background-color: lightgrey;*/
     color: rgba(06,30,98,1);
 }
 
@@ -257,9 +253,5 @@ tablet view
 
     details[open] summary:hover{
         margin-left: 18pt;
-    }
-
-    #gallery figure{
-        width: 50%;
     }
 }
