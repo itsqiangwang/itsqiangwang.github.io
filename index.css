@@ -1,8 +1,16 @@
+/*
+all
+*/
 html, body{
     margin: 0;
     padding: 0;
     letter-spacing: 0.5pt;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 a{
@@ -23,6 +31,25 @@ figcaption{
     font-family: 'Arial', sans-serif;
 }
 
+.bio{
+    border-bottom: 1px dotted black;
+}
+
+nav{
+    padding: 18pt;
+    font-size: 14pt;
+    font-family: 'Arial', sans-serif;
+}
+
+nav span span{
+    transition: 0.3s;
+}
+
+nav span span:hover{
+    color: rgba(06,30,98,0.5) !important;
+    cursor: pointer;
+}
+
 ol,
 ul{
     padding: 18pt 0;
@@ -33,6 +60,23 @@ ul{
 ol li,
 ul li{
     list-style-type: none;
+}
+
+.white-image{
+    border: 1px solid lightgrey;
+}
+
+/*
+index
+*/
+#index{
+    display: block;
+}
+
+#index-view:hover{
+    cursor: pointer;
+    opacity: 1;
+    color: rgba(06,30,98,1);
 }
 
 details,
@@ -75,20 +119,21 @@ summary:before{
 
 details[open] summary:before{
     content: '–';
+    transform: rotate(45deg);
 }
 
 details>*:not(summary){
     margin: 0 18pt;
 }
 
-details[open] {
-    background-color: lightgrey;
-}
+/* details[open] {
+    background-color: white;
+} */
 
 details[open] summary{
     text-indent: -18pt;
     margin-left: 18pt;
-    background-color: lightgrey;
+    background-color: white;
     color: rgba(06,30,98,1);
 }
 
@@ -110,15 +155,45 @@ details video{
     display: block;
     outline: none;
     margin: 18pt 0;
-    max-width: calc(100vw / 3);
-    max-height: calc(100vh / 3);
+    /* max-width: calc(100vw / 10);
+    max-height: calc(100vh / 10); */
+    max-width: 75vw;
+    max-height: 75vh;
     transition: 0.3s;
 }
 
 details img:hover,
 details video:hover{
-    max-width: 75vw;
-    max-height: 75vh;
+    /* max-width: 75vw;
+    max-height: 75vh; */
+}
+
+/*
+gallery view
+*/
+#gallery{
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#gallery figure{
+    width: calc(100% / 4);
+    margin: 0;
+    padding: 0pt 18pt 18pt 18pt;
+    box-sizing: border-box;
+}
+
+#gallery figure img,
+#gallery figure video{
+    width: 100%;
+}
+
+#gallery figcaption span:nth-of-type(odd){
+    opacity: 0.5;
+    font-family: 'Times New Roman', serif;
 }
 
 /*
@@ -149,6 +224,10 @@ mobile view
     details[open] summary:hover{
         margin-left: 18pt;
     }
+
+    #gallery figure{
+        width: 100%;
+    }
 }
 
 /*
@@ -178,5 +257,9 @@ tablet view
 
     details[open] summary:hover{
         margin-left: 18pt;
+    }
+
+    #gallery figure{
+        width: 50%;
     }
 }
