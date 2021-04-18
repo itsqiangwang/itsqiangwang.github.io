@@ -1,17 +1,21 @@
 /*
 all
 */
+
 html, body{
     margin: 0;
     padding: 0;
     letter-spacing: 0.5pt;
-    /*background-color: lightgrey;*/
 }
 
 a{
     color: black;
     transition: 0.3s;;
     text-decoration: underline;
+}
+
+section a{
+    color: white;
 }
 
 a:hover{
@@ -24,16 +28,25 @@ figcaption{
     padding: 0;
     font-size: 14pt;
     font-family: 'Arial', sans-serif;
+    color: white;
 }
 
 .bio{
     border-bottom: 1px dotted black;
+    background-color: white;
 }
 
 nav{
     padding: 18pt;
     font-size: 14pt;
+    text-align: center;
     font-family: 'Arial', sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+nav span{
+    background-color: white;
 }
 
 nav span span{
@@ -62,10 +75,14 @@ ul li{
 }
 
 /*
+bio
+*/
+
+/*
 index
 */
 #index{
-    display: block;
+    display: none;
 }
 
 #index-view:hover{
@@ -114,32 +131,38 @@ summary:before{
 
 details[open] summary:before{
     content: '–';
-    transform: rotate(45deg);
 }
 
 details>*:not(summary){
     margin: 0 18pt;
 }
 
-details[open] {
-    /*background-color: lightgrey;*/
+section details[open] {
+    background-color: black;
 }
 
 details[open] summary{
     text-indent: -18pt;
     margin-left: 18pt;
-    background-color: white;
-    /*background-color: lightgrey;*/
-    color: rgba(06,30,98,1);
 }
 
-details[open] summary:hover{
-    color: rgba(0,0,0,0.5);
+section details[open] summary{
+    color: rgba(255,255,255,1);
+    /* font-size: 28pt; */
+    /* background-color: white;
+    color: rgba(06,30,98,1); */
+    text-align: center;
+    mix-blend-mode: difference;
+}
+
+section details[open] summary:hover{
+    color: rgba(255,255,255,0.5);
+    /* color: rgba(0,0,0,0.5); */
 }
 
 details figure {
     display: none;
-    margin-bottom: 18pt;
+    padding-bottom: 18pt;
 }
 
 details[open] figure{
@@ -151,32 +174,39 @@ details video{
     display: block;
     outline: none;
     margin: 18pt 0;
-    max-width: calc(100vw / 3);
-    max-height: calc(100vh / 3);
-    /* max-width: 75vw;
-    max-height: 75vh; */
+    /* max-width: calc(100vw / 3);
+    max-height: calc(100vh / 3); */
+    max-width: 100%;
+    max-height: 75vh;
     transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 details img:hover,
 details video:hover{
-    max-width: 75vw;
-    max-height: 75vh;
+    /* max-width: 75vw;
+    max-height: 75vh; */
+}
+
+section details[open] span:nth-of-type(3){
+    display: none;
 }
 
 /*
 gallery view
 */
 #gallery{
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     box-sizing: border-box;
     width: 100%;
+    background-color: black;
 }
 
 #gallery figure{
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     margin: 0;
     padding: 0pt 18pt 18pt 18pt;
     box-sizing: border-box;
@@ -187,10 +217,14 @@ gallery view
     width: 100%;
 }
 
-#gallery figcaption span:nth-of-type(odd){
+/* #gallery figcaption span:nth-of-type(odd){
     opacity: 0.5;
     font-family: 'Times New Roman', serif;
-}
+} */
+
+/* #gallery figure figcaption span{
+    display: none;
+} */
 
 /*
 mobile view
