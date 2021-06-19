@@ -1,3 +1,8 @@
+nav,
+section{
+    display: none !important;
+}
+
 /*
 all
 */
@@ -29,11 +34,6 @@ figcaption{
     font-size: 14pt;
     font-family: 'Arial', sans-serif;
     color: white;
-}
-
-.bio{
-    border-bottom: 1px dotted black;
-    background-color: white;
 }
 
 nav{
@@ -77,6 +77,11 @@ ul li{
 /*
 bio
 */
+.bio{
+    border-bottom: 1px dotted transparent;
+    background-color: white;
+}
+
 
 /*
 index
