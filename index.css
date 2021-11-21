@@ -2,10 +2,9 @@
 maintenance mode toggle
 */
 
-/* nav,
-section{
+details:not(:nth-of-type(1)){
     display: none !important;
-} */
+}
 
 /*
 all
