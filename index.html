@@ -1,63 +1,109 @@
 <!DOCTYPE html>
-<html lang="EN">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="design portfolio">
-    <meta name="keywords" content="graphic and interactive design">
-    <meta name="author" content="qiang wang">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="the-hours.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="063098.png" />
-    <title>Qiang Wang</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+  .text-container {
+    font-size: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .could-would-should,
+  .blinking-cursor {
+    font-size: 12pt;
+  }
+
+  .blinking-cursor {
+    animation: blinking-cursor 1s steps(1) infinite;
+  }
+
+  .highlight {
+    background-color: black;
+    color: white;
+  }
+
+  @keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+</style>
 </head>
-
 <body>
-    <!-- <ul>
-        <li>
-            Qiang Wang<br>
-            <a href="mailto:itsqiangwang@gmail.com">itsqiangwang@gmail.com</a><br>
-        </li>
-    </ul>
+  <div class="text-container">
+    <span class="could-would-should" id="word"></span>
+    <span class="blinking-cursor" id="cursor">|</span>
+  </div>
 
-    <figure>
-        <img src="2017/ILLITERA/ILLITERA-poster.jpg" alt="">
-        <img src="2017/LENTICULAR/Lenticular-select-photo.jpg" alt="">
-        <img src="2018/GENESIS/genesis-documentation1.jpg" alt="">
-        <img src="2018/SOAA-CELEBRATIONS/UCLAFO-poster-original.jpg" alt="">
-        <img src="2019/SND-DI/DI-ss-1.png" alt="">
-        <img src="2019/SND-DI/SND-DI-shapes.jpg" alt="">
-        <img src="2019/TYPEVOICE/TYPEVOICE-family.png" alt="">
-        <img src="2019/UCLASOAAWINTER/UCLAWG-poster-original.jpg" alt="">
-        <img src="2020/32-POEMS/32-POEMS-in-bag.jpg" alt="">
-        <img src="2020/32-POEMS/32-POEMS-scan-cross-chinese.jpg" alt="">
-        <img src="2020/32-POEMS/32-POEMS-scan-cross-english.jpg" alt="">
-        <img src="2020/LAABF-Q/LAABF-Q.png" alt="">
-        <img src="2020/PHOENIX/PHOENIX-poster.jpg" alt="">
-        <img src="2020/PHOENIX/PHOENIX-program-spread.jpg" alt="">
-        <img src="2020/REN-REN-REN/REN-REN-REN-booklet-select-2.jpg" alt="">
-        <img src="2020/REN-REN-REN/REN-REN-REN-poster-original.jpg" alt="">
-        <img src="2020/REN-REN-REN/REN-REN-REN-select-image-3.jpg" alt="">
-        <img src="2020/STILL-GOING-STRONG/weltformat-still-going-strong-qiangwang3.jpg" alt="">
-        <img src="2021/EOS/EOS-logo.png" alt="">
-        <img src="2021/I-WAS-TWENTY-TWO-AND/i-was-twenty-two-and-scan-radial.jpg" alt="">
-        <img src="2021/NEW-HOME/new-home-cover.jpeg" alt="">
-        <img src="2021/NEW-HOME/new-home-select-spreads-1.jpeg" alt="">
-        <img src="2021/NEW-HOME/new-home-select-spreads-5.jpeg" alt="">
-        <img src="2021/NEW-HOME/new-home-select-spreads-6.jpeg" alt="">
-        <img src="2021/SOAA-CC/SOAA-CC-2122-poster-kaufman.jpg" alt="">
-        <img src="2021/TFD/TFD-1.jpg" alt="">
-        <img src="2021/TFD/TFD-frontcover.jpg" alt="">
-        <img src="2021/TTD/TTD-invitation-updated-front.png" alt="">
-    </figure> -->
+<script>
+  const words = ['Could', 'Would', 'Should'];
+  const wordSpan = document.getElementById('word');
+  const cursor = document.getElementById('cursor');
 
-    <section>
-        <h1 class="title"></h1>
-        <div class="wordRotationController">
-            <span class="wordContainer"></span>
-        </div>
-    </section>
-    <script src="the-hours.js"></script>
+  function alternateWords() {
+    let currentIndex = Math.floor(Math.random() * words.length);
+
+    function nextWord() {
+      currentIndex = (currentIndex + 1) % words.length;
+      const nextWord = words[currentIndex];
+      typeText(wordSpan, nextWord, () => {
+        const delayBeforeAction = Math.floor(Math.random() * 10000) + 1000; // Random delay between 1 to 5 seconds
+        setTimeout(() => {
+          highlightText(wordSpan);
+          setTimeout(() => {
+            deleteText(wordSpan, alternateWords);
+            setTimeout(() => {
+              removeHighlight(wordSpan);
+            }, 100); // Highlight duration
+          }, 500); // Delay before deletion
+        }, delayBeforeAction); // Delay before highlighting
+      });
+    }
+
+    nextWord();
+  }
+
+  function deleteText(element, callback) {
+    element.textContent = '';
+    callback();
+  }
+
+  function typeText(element, text, callback) {
+    let index = 0;
+    const typeInterval = setInterval(() => {
+      if (index <= text.length) {
+        element.textContent = text.substring(0, index);
+        document.title = text.substring(0, index); // Update title with the partially typed word
+        index++;
+      } else {
+        clearInterval(typeInterval);
+        callback();
+      }
+    }, 100); // Typing speed
+  }
+
+  function highlightText(element) {
+    element.classList.add('highlight');
+    cursor.style.visibility = 'hidden'; // Hide cursor
+  }
+
+  function removeHighlight(element) {
+    element.classList.remove('highlight');
+    cursor.style.visibility = 'visible'; // Show cursor
+  }
+
+  alternateWords(); // Start the animation
+</script>
 </body>
-
 </html>
