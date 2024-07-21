@@ -1,109 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
-<style>
-  .text-container {
-    font-size: 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-
-  .could-would-should,
-  .blinking-cursor {
-    font-size: 12pt;
-  }
-
-  .blinking-cursor {
-    animation: blinking-cursor 1s steps(1) infinite;
-  }
-
-  .highlight {
-    background-color: black;
-    color: white;
-  }
-
-  @keyframes blinking-cursor {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Qiang Wang</title>
 </head>
+
 <body>
-  <div class="text-container">
-    <span class="could-would-should" id="word"></span>
-    <span class="blinking-cursor" id="cursor">|</span>
+  <header>
+    <nav>
+      <a href="#index" class="index-link">
+        Index
+      </a>
+    </nav>
+      <div>
+        <a href="http://">
+          Qiang Wang
+        </a>
+        <br>
+        Select projects, 2017 –
+      </div>
+  </header>
+
+  <figure class="landing" id="landing">
+    <figcaption>
+      <h1 id="landing-project-name"></h1>
+      <h2 id="landing-project-type"></h2>
+      <h3 id="landing-project-year"></h3>
+      <a onclick="landingShuffler()" href="#landing">Shuffle</a>
+    </figcaption>
+
+    <img id="landing-project-image" src="">
+  </figure>
+
+  <div class="index" id="index">
+    <details>
+      <summary>
+        <h1>
+          UCLA Design Media Arts Summer Institute
+        </h1>
+        <h2>
+          Identity, with Yuehao Jiang and Eli Joteva, for UCLA School of the Arts and Architecture
+        </h2>
+        <h3>
+          2024
+        </h3>
+      </summary>
+
+      <img src="projects/2024/DMASI24/Typeface.gif" alt="">
+      <img src="projects/2024/DMASI24/Poster.png" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          New Haven Open Studios
+        </h1>
+        <h2>
+          Website, with Yale School of Art
+        </h2>
+        <h3>
+          2023
+        </h3>
+      </summary>
+
+      <img src="projects/2024/DMASI24/Typeface.gif" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          UCLA Design Media Arts Summer Institute
+        </h1>
+        <h2>
+          Identity, with Yuehao Jiang, for UCLA School of the Arts and Architecture
+        </h2>
+        <h3>
+          2023
+        </h3>
+      </summary>
+
+      <img src="projects/2023/DMASI23/051723-ident-22.png" alt="">
+      <img src="projects/2023/DMASI23/DMASI23_Poster.png" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          Sketching Yale
+        </h1>
+        <h2>
+          Poster, with Yale School of Art
+        </h2>
+        <h3>
+          2023
+        </h3>
+      </summary>
+
+      <img src="projects/2023/SketchingYale/Sketching_Yale_Poster.jpg" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          Night School
+        </h1>
+        <h2>
+          Website, with Alvin Ashiatey and Jamaal Benjamin, for Yale School of Art
+        </h2>
+        <h3>
+          2023
+        </h3>
+      </summary>
+
+      <img src="projects/2023/SketchingYale/Sketching_Yale_Poster.jpg" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          Online Offline
+        </h1>
+        <h2>
+          Website
+        </h2>
+        <h3>
+          2023
+        </h3>
+      </summary>
+
+      <img src="projects/2024/DMASI24/Typeface.gif" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          SML Confessions
+        </h1>
+        <h2>
+          Website
+        </h2>
+        <h3>
+          2023
+        </h3>
+      </summary>
+
+      <img src="projects/2024/DMASI24/Typeface.gif" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          UCLA School of the Arts and Architecture Celebrations
+        </h1>
+        <h2>
+          Identity, with Anne Marie Burke
+        </h2>
+        <h3>
+          2021
+        </h3>
+      </summary>
+
+      <img src="projects/2021/SOAA-CC/SOAA-CC-2122-poster-broad.jpg" alt="">
+      <img src="projects/2021/SOAA-CC/SOAA-CC-2122-poster-kaufman.jpg" alt="">
+      <img src="projects/2021/SOAA-CC/SOAA-CC-2122-poster-perloff.jpg" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          Spaces to Belong
+        </h1>
+        <h2>
+          with Google Brand Studio
+        </h2>
+        <h3>
+          2022
+        </h3>
+      </summary>
+
+      <img src="projects/2024/DMASI24/Typeface.gif" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          Belonging at Google
+        </h1>
+        <h2>
+          with Google Brand Studio
+        </h2>
+        <h3>
+          2022
+        </h3>
+      </summary>
+
+      <img src="projects/2024/DMASI24/Typeface.gif" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          32 Poems for Monterey Park
+        </h1>
+        <h2>
+          Website
+        </h2>
+        <h3>
+          2022
+        </h3>
+      </summary>
+
+      <img src="projects/2024/DMASI24/Typeface.gif" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          My Octopus Teacher with Pippa Ehrlich
+        </h1>
+        <h2>
+          Identity
+        </h2>
+        <h3>
+          with Google Brand Studio, 2021
+        </h3>
+      </summary>
+
+      <img src="projects/2021/GBS/MOT-poster-email.gif" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          PHOENIX
+        </h1>
+        <h2>
+          Identity
+        </h2>
+        <h3>
+          with Marianna Varviani, 2020
+        </h3>
+      </summary>
+
+      <img src="projects/2020/PHOENIX/PHOENIX-program-spread.jpg" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          Stefanie Nelson Dancegroup / Dance Italia
+        </h1>
+        <h2>
+          Identity, with Gretel NYC
+        </h2>
+        <h3>
+          2019
+        </h3>
+      </summary>
+
+      <img src="projects/2019/SND-DI/SND_Poster_Single_Insitu_CROP.png" alt="">
+      <img src="projects/2019/SND-DI/stefanie-nelson-dancegroup_line.gif" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          Neurotrack
+        </h1>
+        <h2>
+          Identity, with Butchershop SF
+        </h2>
+        <h3>
+          2019
+        </h3>
+      </summary>
+
+      <img src="projects/2017/ILLITERA/ILLITERA-poster.jpg" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          UCLA School of the Arts and Architecture Celebrations
+        </h1>
+        <h2>
+          Identity, with Anne Marie Burke
+        </h2>
+        <h3>
+          2018
+        </h3>
+      </summary>
+
+      <img src="projects/2018/SOAA-CELEBRATIONS/UCLAFO-poster-original.jpg" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          Illitera
+        </h1>
+        <h2>
+          Poster, with Nicolas Bernklau and Tobias Müller
+        </h2>
+        <h3>
+          2017
+        </h3>
+      </summary>
+
+      <img src="projects/2017/ILLITERA/ILLITERA-poster.jpg" alt="">
+    </details>
   </div>
 
-<script>
-  const words = ['Could', 'Would', 'Should'];
-  const wordSpan = document.getElementById('word');
-  const cursor = document.getElementById('cursor');
+  <footer>
+    Los Angeles, CA
+    <div id="dateTimeDisplay"></div>
+    <br>
+    <a href="sms:(1)(6265315368)">Send a message</a>
+  </footer>
 
-  function alternateWords() {
-    let currentIndex = Math.floor(Math.random() * words.length);
+  <script src="js/time.js">
+  </script>
 
-    function nextWord() {
-      currentIndex = (currentIndex + 1) % words.length;
-      const nextWord = words[currentIndex];
-      typeText(wordSpan, nextWord, () => {
-        const delayBeforeAction = Math.floor(Math.random() * 10000) + 1000; // Random delay between 1 to 5 seconds
-        setTimeout(() => {
-          highlightText(wordSpan);
-          setTimeout(() => {
-            deleteText(wordSpan, alternateWords);
-            setTimeout(() => {
-              removeHighlight(wordSpan);
-            }, 100); // Highlight duration
-          }, 500); // Delay before deletion
-        }, delayBeforeAction); // Delay before highlighting
-      });
-    }
+  <script src="js/landingShuffle.js">
+  </script>
 
-    nextWord();
-  }
-
-  function deleteText(element, callback) {
-    element.textContent = '';
-    callback();
-  }
-
-  function typeText(element, text, callback) {
-    let index = 0;
-    const typeInterval = setInterval(() => {
-      if (index <= text.length) {
-        element.textContent = text.substring(0, index);
-        document.title = text.substring(0, index); // Update title with the partially typed word
-        index++;
-      } else {
-        clearInterval(typeInterval);
-        callback();
-      }
-    }, 100); // Typing speed
-  }
-
-  function highlightText(element) {
-    element.classList.add('highlight');
-    cursor.style.visibility = 'hidden'; // Hide cursor
-  }
-
-  function removeHighlight(element) {
-    element.classList.remove('highlight');
-    cursor.style.visibility = 'visible'; // Show cursor
-  }
-
-  alternateWords(); // Start the animation
-</script>
+  <script src="js/detailsToggle.js">
+  </script>
 </body>
+
 </html>
