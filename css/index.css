@@ -15,7 +15,7 @@ html{
     margin: 0;
     scroll-behavior: smooth;
     text-decoration: none;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
 header,
@@ -57,13 +57,24 @@ h6{
 .landing header{
     position: relative;
     z-index: 1;
+    width: calc(100% / 3);
 }
 
-.landing nav{
+.landing nav a{
     position: absolute;
     z-index: 1;
-    top: 0;
-    right: 0;
+    top: 20px;
+}
+
+.landing nav .index-link{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.landing nav .info-link{
+    position: absolute;
+    right: 20px;
 }
 
 .landing figure{
