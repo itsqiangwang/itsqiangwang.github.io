@@ -9,43 +9,53 @@
 </head>
 
 <body>
-  <header>
+  <section class="landing" id="landing">
+    <header>
+      <h1>
+        Qiang Wang
+        <br>
+        Select projects, 2017 –
+      </h2>
+    </header>
+
     <nav>
+      <a href="https://qiang-wang.com/CV" class="info-link">
+        Info
+      </a>
+      <br>
       <a href="#index" class="index-link">
         Index
       </a>
     </nav>
-      <div>
-        <a href="http://">
-          Qiang Wang
-        </a>
-        <br>
-        Select projects, 2017 –
-      </div>
-  </header>
 
-  <figure class="landing" id="landing">
-    <figcaption>
-      <h1 id="landing-project-name"></h1>
-      <h2 id="landing-project-type"></h2>
-      <h3 id="landing-project-year"></h3>
-      <a onclick="landingShuffler()" href="#landing">Shuffle</a>
-    </figcaption>
+    <figure>
+      <a onclick="landingShuffler()">
+        <img id="landing-project-image" src="" style="display:none;">
+        <video autoplay muted loop id="landing-project-video" style="display:none;">
+          <source id="landing-project-video-source" src="">
+          Your browser does not support the video tag.
+        </video>
+      </a>
+    
+      <figcaption>
+        <h1 id="landing-project-name"></h1>
+        <h2 id="landing-project-type"></h2>
+        <h3 id="landing-project-year"></h3>
+      </figcaption>
+    </figure>
+  </section>
 
-    <img id="landing-project-image" src="">
-  </figure>
-
-  <div class="index" id="index">
+  <section class="index" id="index">
     <details>
       <summary>
         <h1>
           UCLA Design Media Arts Summer Institute
         </h1>
         <h2>
-          Identity, with Yuehao Jiang and Eli Joteva, for UCLA School of the Arts and Architecture
+          Identity
         </h2>
         <h3>
-          2024
+          with Yuehao Jiang and Eli Joteva, for UCLA School of the Arts and Architecture, 2024
         </h3>
       </summary>
 
@@ -59,14 +69,16 @@
           New Haven Open Studios
         </h1>
         <h2>
-          Website, with Yale School of Art
+          Website
         </h2>
         <h3>
-          2023
+          for Yale School of Art, 2023
         </h3>
       </summary>
 
-      <img src="projects/2024/DMASI24/Typeface.gif" alt="">
+      <video autoplay muted loop>
+        <source src="projects/2024/NHVOS/NHVOS_Poster_Recording.mp4">
+      </video>
     </details>
 
     <details>
@@ -75,10 +87,10 @@
           UCLA Design Media Arts Summer Institute
         </h1>
         <h2>
-          Identity, with Yuehao Jiang, for UCLA School of the Arts and Architecture
+          Identity
         </h2>
         <h3>
-          2023
+          with Yuehao Jiang, for UCLA School of the Arts and Architecture, 2023
         </h3>
       </summary>
 
@@ -92,10 +104,10 @@
           Sketching Yale
         </h1>
         <h2>
-          Poster, with Yale School of Art
+          Poster
         </h2>
         <h3>
-          2023
+          for Yale School of Art, 2023
         </h3>
       </summary>
 
@@ -108,10 +120,10 @@
           Night School
         </h1>
         <h2>
-          Website, with Alvin Ashiatey and Jamaal Benjamin, for Yale School of Art
+          Website
         </h2>
         <h3>
-          2023
+          with Alvin Ashiatey and Jamaal Benjamin, 2023
         </h3>
       </summary>
 
@@ -153,19 +165,52 @@
     <details>
       <summary>
         <h1>
+          UCLA Design Media Arts Summer Institute
+        </h1>
+        <h2>
+          Identity, Website
+        </h2>
+        <h3>
+          with Silvia Rigon and Helen Tran, for UCLA School of the Arts and Architecture, 2022
+        </h3>
+      </summary>
+
+      <img src="projects/2023/DMASI23/051723-ident-22.png" alt="">
+      <img src="projects/2023/DMASI23/DMASI23_Poster.png" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
           UCLA School of the Arts and Architecture Celebrations
         </h1>
         <h2>
-          Identity, with Anne Marie Burke
+          Identity
         </h2>
         <h3>
-          2021
+          with Anne Marie Burke, 2021
         </h3>
       </summary>
 
       <img src="projects/2021/SOAA-CC/SOAA-CC-2122-poster-broad.jpg" alt="">
       <img src="projects/2021/SOAA-CC/SOAA-CC-2122-poster-kaufman.jpg" alt="">
       <img src="projects/2021/SOAA-CC/SOAA-CC-2122-poster-perloff.jpg" alt="">
+    </details>
+
+    <details>
+      <summary>
+        <h1>
+          John Morgan Lecture
+        </h1>
+        <h2>
+          Poster
+        </h2>
+        <h3>
+          with June Lihua Yu, for Yale School of Art, 2022
+        </h3>
+      </summary>
+
+      <img src="projects/2022/JM/John_Morgan_Lecture_Social.gif" alt="">
     </details>
 
     <details>
@@ -190,10 +235,10 @@
           Belonging at Google
         </h1>
         <h2>
-          with Google Brand Studio
+          Poster, Website
         </h2>
         <h3>
-          2022
+          with Google Brand Studio, 2022
         </h3>
       </summary>
 
@@ -222,7 +267,7 @@
           My Octopus Teacher with Pippa Ehrlich
         </h1>
         <h2>
-          Identity
+          Poster
         </h2>
         <h3>
           with Google Brand Studio, 2021
@@ -254,10 +299,10 @@
           Stefanie Nelson Dancegroup / Dance Italia
         </h1>
         <h2>
-          Identity, with Gretel NYC
+          Identity
         </h2>
         <h3>
-          2019
+          with Gretel NY, 2019
         </h3>
       </summary>
 
@@ -271,14 +316,16 @@
           Neurotrack
         </h1>
         <h2>
-          Identity, with Butchershop SF
+          Identity, Logo Animation
         </h2>
         <h3>
-          2019
+          with Butchershop, 2019
         </h3>
       </summary>
 
-      <img src="projects/2017/ILLITERA/ILLITERA-poster.jpg" alt="">
+      <video autoplay muted loop>
+        <source src="projects/2019/NEUROTRACK/NEUROTRACK-logo.mp4">
+      </video>
     </details>
 
     <details>
@@ -287,10 +334,10 @@
           UCLA School of the Arts and Architecture Celebrations
         </h1>
         <h2>
-          Identity, with Anne Marie Burke
+          Identity
         </h2>
         <h3>
-          2018
+          with Anne Marie Burke, 2018
         </h3>
       </summary>
 
@@ -303,22 +350,20 @@
           Illitera
         </h1>
         <h2>
-          Poster, with Nicolas Bernklau and Tobias Müller
+          Poster
         </h2>
         <h3>
-          2017
+          with Nicolas Bernklau and Tobias Müller, 2017
         </h3>
       </summary>
 
       <img src="projects/2017/ILLITERA/ILLITERA-poster.jpg" alt="">
     </details>
-  </div>
+  </section>
 
   <footer>
-    Los Angeles, CA
     <div id="dateTimeDisplay"></div>
-    <br>
-    <a href="sms:(1)(6265315368)">Send a message</a>
+    Los Angeles, CA
   </footer>
 
   <script src="js/time.js">

@@ -11,31 +11,31 @@ document.querySelectorAll('details').forEach(details => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll("img:not(#landing img)");
-    let currentlyToggledImage = null;
+// document.addEventListener("DOMContentLoaded", function() {
+//     const images = document.querySelectorAll("img:not(#landing img)");
+//     let currentlyToggledImage = null;
 
-    images.forEach(image => {
-        image.addEventListener("click", function() {
-            // Reset the currently toggled image, if any
-            if (currentlyToggledImage && currentlyToggledImage !== this) {
-                currentlyToggledImage.style.width = "";
-                currentlyToggledImage.style.maxWidth = "";
-                currentlyToggledImage.style.maxHeight = "";
-            }
+//     images.forEach(image => {
+//         image.addEventListener("click", function() {
+//             // Reset the currently toggled image, if any
+//             if (currentlyToggledImage && currentlyToggledImage !== this) {
+//                 currentlyToggledImage.style.width = "";
+//                 currentlyToggledImage.style.maxWidth = "";
+//                 currentlyToggledImage.style.maxHeight = "";
+//             }
 
-            // Toggle the clicked image
-            if (this.style.width === "100%") {
-                this.style.width = "";
-                this.style.maxWidth = "";
-                this.style.maxHeight = "";
-                currentlyToggledImage = null;
-            } else {
-                this.style.width = "100%";
-                this.style.maxWidth = "none";
-                this.style.maxHeight = "none";
-                currentlyToggledImage = this;
-            }
-        });
-    });
-});
+//             // Toggle the clicked image
+//             if (this.style.width === "100%") {
+//                 this.style.width = "";
+//                 this.style.maxWidth = "";
+//                 this.style.maxHeight = "";
+//                 currentlyToggledImage = null;
+//             } else {
+//                 this.style.width = "100%";
+//                 this.style.maxWidth = "none";
+//                 this.style.maxHeight = "none";
+//                 currentlyToggledImage = this;
+//             }
+//         });
+//     });
+// });
