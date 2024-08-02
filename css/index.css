@@ -2,7 +2,7 @@ html{
     margin: 0;
     padding: 0;
     color: grey;
-    background-color: ghostwhite;
+    background-color: black;
 }
 
 *{
@@ -15,7 +15,6 @@ html{
     margin: 0;
     scroll-behavior: smooth;
     text-decoration: none;
-    /* transition: 0.3s; */
 }
 
 header,
@@ -47,37 +46,44 @@ h6{
     font-weight: normal;
 }
 
-/* landing */
-.landing{
-    width: 100%;
-    height: 100vh;
-    background-color: black;
+.hidden{
+    display: none;
 }
 
-.landing header{
+
+/* header */
+header{
     position: relative;
     z-index: 1;
     width: calc(100% / 3);
+    padding-bottom: 0;
 }
 
-.landing nav a{
+/* nav */
+nav{
+    padding: 0;
+}
+
+nav a{
     position: absolute;
     z-index: 1;
     top: 20px;
 }
 
-.landing nav .index-link{
+nav .index-link,
+nav .shuffle-link{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.landing nav .info-link{
+nav .info-link{
     position: absolute;
     right: 20px;
 }
 
-.landing figure{
+/* shuffle */
+.shuffle figure{
     position: absolute;
     top: 0;
     width: 100%;
@@ -88,13 +94,13 @@ h6{
     overflow: hidden;
 }
 
-.landing img,
-.landing video{
+.shuffle img,
+.shuffle video{
     max-width: 75vw;
     max-height: 75vh;
 }
 
-.landing figcaption{
+.shuffle figcaption{
     position: absolute;
     text-align: center;
     left: 50%;
@@ -106,7 +112,6 @@ h6{
 /* index */
 .index{
     width: 100%;
-    display: flex;
     flex-wrap: wrap;
     padding: 10px;
 }

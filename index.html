@@ -9,43 +9,45 @@
 </head>
 
 <body>
-  <section class="landing" id="landing">
-    <header>
-      <h1>
-        Qiang Wang
-        <br>
-        Select projects, 2017 –
-      </h2>
-    </header>
-
-    <nav>
-      <a href="https://qiang-wang.com/CV" class="info-link">
-        Info
-      </a>
+  <header>
+    <h1>
+      Qiang Wang
       <br>
-      <a href="#index" class="index-link">
-        Index
-      </a>
-    </nav>
+      Select projects, 2017 –
+    </h1>
+  </header>
 
+  <nav>
+    <a href="https://qiang-wang.com/CV" class="info-link">
+      Info
+    </a>
+    <a href="#" class="index-link" id="index-link">
+      &#8917;
+    </a>
+    <a href="#" class="shuffle-link hidden" id="shuffle-link">
+      &#10542;
+    </a>
+  </nav>
+
+  <section class="shuffle" id="shuffle">
     <figure>
-      <a onclick="landingShuffler()">
-        <img id="landing-project-image" src="" style="display:none;">
-        <video autoplay muted loop id="landing-project-video" style="display:none;">
-          <source id="landing-project-video-source" src="">
+      <a onclick="shuffle()">
+        <img id="shuffle-project-image" src="" style="display:none;">
+        <video autoplay muted loop id="shuffle-project-video" style="display:none;">
+          <source id="shuffle-project-video-source" src="">
           Your browser does not support the video tag.
         </video>
       </a>
     
       <figcaption>
-        <h1 id="landing-project-name"></h1>
-        <h2 id="landing-project-type"></h2>
-        <h3 id="landing-project-year"></h3>
+        <h1 id="shuffle-project-name"></h1>
+        <h2 id="shuffle-project-type"></h2>
+        <h3 id="shuffle-project-year"></h3>
       </figcaption>
     </figure>
   </section>
 
-  <section class="index" id="index">
+  <section class="index hidden" id="index">
     <details>
       <summary>
         <h1>
@@ -417,17 +419,17 @@
   </section>
 
   <footer>
-    <div id="dateTimeDisplay"></div>
-    Los Angeles, CA
+      <div id="dateTimeDisplay"></div>
+      Los Angeles, CA
   </footer>
 
   <script src="js/time.js">
   </script>
 
-  <script src="js/landingShuffle.js">
+  <script src="js/shuffle.js">
   </script>
 
-  <script src="js/detailsToggle.js">
+  <script src="js/toggle.js">
   </script>
 </body>
 
