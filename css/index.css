@@ -133,6 +133,10 @@ mobile view
     .index-mode figure{
         padding: 80px 20px 0px 20px;
     }
+
+    nav .index-link{
+        display: none;
+    }
 }
 
 /*
@@ -151,5 +155,9 @@ tablet view
 
     .index-mode figure{
         padding: 80px 20px 0px 20px;
+    }
+    
+    nav .index-link{
+        display: none;
     }
 }
