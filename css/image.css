@@ -1,0 +1,50 @@
+html, body{
+  background-color: black;
+}
+
+nav > *{
+    color: ghostwhite;
+}
+
+nav .shuffle-button{
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+section.image-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+section.image-container img,
+section.image-container video{
+    height: 100%;
+}
+
+section.image-container img:hover,
+section.image-container video:hover{
+    cursor: pointer;
+}
+
+footer{
+    color: ghostwhite;
+}
+
+/*
+mobile view
+*/
+@media only screen and (max-width: 480px) {
+
+}
+
+/*
+tablet view
+*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}

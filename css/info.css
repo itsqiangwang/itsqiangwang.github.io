@@ -1,0 +1,48 @@
+section{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+summary{
+  list-style: none;
+  display: inline-block;
+  /* border: 1px solid red; */
+}
+
+summary a span:nth-of-type(2),
+details[open] summary a span:nth-of-type(1){
+  display: none;
+}
+
+summary a span:nth-of-type(1),
+details[open] summary a span:nth-of-type(2){
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display:none;
+}
+
+section p{
+  text-align: left;
+  margin-top: 20px;
+}
+
+/*
+mobile view
+*/
+@media only screen and (max-width: 480px) {
+    .bio{
+        width: fit-content;
+    }
+}
+
+/*
+    tablet view
+    */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
