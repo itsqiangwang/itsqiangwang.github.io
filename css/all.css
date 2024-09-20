@@ -32,16 +32,22 @@ body{
     background-color: ghostwhite;
 }
 
-a {
+a,
+button {
     display: inline-flex;
     text-decoration: none;
+    background: transparent;
+    outline: none;
+    border: none;
 }
 
-a::before{
+a::before,
+button::before{
     content: '(';
 }
 
-a::after{
+a::after,
+button::after{
     content: ')';
 }
 
