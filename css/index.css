@@ -31,6 +31,12 @@ footer > * {
   width: 100%;
 }
 
+a{
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
 figure {
   position: relative;
 }
@@ -97,9 +103,6 @@ figure > video {
 }
 
 .web-container a {
-  display: block;
-  width: fit-content;
-  margin: auto;
   margin-top: 20px;
 }
 
