@@ -16,6 +16,31 @@ body {
   text-align: center;
 }
 
+nav{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+nav li{
+  display: inline-block;
+  border-top: 1px solid transparent;
+  opacity: 0.5;
+  padding: 20px;
+}
+
+.active{
+  opacity: 1;
+  border-top: 1px solid #063098;
+}
+
 header,
 footer {
   height: 100vh;
@@ -64,6 +89,11 @@ figure > video {
   display: block;
   border-top: 1px solid rgb(235, 235, 235);
   border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+details{
+  position: sticky;
+  top: 0;
 }
 
 /* media container */
@@ -133,11 +163,7 @@ mobile view
     width: 35vh;
     height: 60vh;
   }
-
-  figure > :not(:first-child) {
-    margin: 50vh 0;
-  }
-
+  
   figure figcaption {
     padding: 0 40px;
   }
@@ -163,10 +189,6 @@ tablet view
   .social-container .social-frame {
     width: 35vh;
     height: 60vh;
-  }
-
-  figure > :not(:first-child) {
-    margin: 50vh 0;
   }
 
   figure figcaption {

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intersection Observer Example</title>
+    <style>
+        nav {
+            position: fixed;
+            top: 0;
+            background: white;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        li.active a {
+            background-color: yellow; /* Highlight active nav item */
+        }
+
+        figure {
+            height: 100vh; /* Make each figure occupy full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            border: 1px solid black;
+            margin: 20px 0; /* Spacing between figures */
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#1">1</a></li>
+        <li><a href="#2">2</a></li>
+        <li><a href="#3">3</a></li>
+        <li><a href="#4">4</a></li>
+        <li><a href="#5">5</a></li>
+        <li><a href="#6">6</a></li>
+        <li><a href="#7">7</a></li>
+        <li><a href="#8">8</a></li>
+    </ul>
+</nav>
+
+<figure id="1">Figure 1 Content</figure>
+<figure id="2">Figure 2 Content</figure>
+<figure id="3">Figure 3 Content</figure>
+<figure id="4">Figure 4 Content</figure>
+<figure id="5">Figure 5 Content</figure>
+<figure id="6">Figure 6 Content</figure>
+<figure id="7">Figure 7 Content</figure>
+<figure id="8">Figure 8 Content</figure>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const options = {
+            root: null,
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const figureId = entry.target.getAttribute('id');
+                const navLink = document.querySelector(`nav a[href="#${figureId}"]`)?.parentElement;
+
+                if (navLink) {
+                    if (entry.isIntersecting) {
+                        navLink.classList.add("active");
+                        console.log(`Class added to <li>: ${figureId}`);
+                    } else {
+                        navLink.classList.remove("active");
+                        console.log(`Class removed from <li>: ${figureId}`);
+                    }
+                }
+            });
+        }, options);
+
+        // Observe all figure elements
+        document.querySelectorAll("figure").forEach(figure => {
+            observer.observe(figure);
+            console.log(`Observing Figure ${figure.getAttribute('id')}`);
+        });
+    });
+</script>
+
+</body>
+</html>
