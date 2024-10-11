@@ -18,27 +18,27 @@ body {
 
 nav{
   position: fixed;
-  bottom: 0;
   width: 100%;
   z-index: 1;
 }
 
 nav ul{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 nav li{
-  display: inline-block;
-  border-top: 1px solid transparent;
+  display: block;
+  border-bottom: 1px solid transparent;
   opacity: 0.5;
   padding: 20px;
 }
 
 .active{
   opacity: 1;
-  border-top: 1px solid #063098;
+  border-bottom: 1px solid #063098;
 }
 
 header,
