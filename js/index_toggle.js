@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 requestAnimationFrame(() => {
-                  const stickyOffset = 20;
+                  const stickyOffset = -1;
                   const summaryElement =
                     detailsElement.querySelector("summary");
                   const summaryHeight = summaryElement
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(() => {
         detailsElement.scrollIntoView({ behavior: "auto", block: "start" });
         requestAnimationFrame(() => {
-          const stickyOffset = 20;
+          const stickyOffset = -1;
           const summaryElement = detailsElement.querySelector("summary");
           const summaryHeight = summaryElement
             ? summaryElement.offsetHeight
