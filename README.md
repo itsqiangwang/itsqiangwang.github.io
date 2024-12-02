@@ -1,2 +1,1 @@
-# Qiang Wang
-bio coming soon
+# interactive
