@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: lightgrey;
+  background-color: white;
   overscroll-behavior: none;
 }
 
@@ -12,7 +12,7 @@ body {
   font-weight: normal;
   /* text-transform: uppercase; */
   font-family: "Sono", monospace;
-  font-size: 10pt;
+  font-size: 20pt;
   box-sizing: border-box;
   /* color: #063098; */
 }
@@ -47,16 +47,18 @@ nav{
   z-index: 999;
   top: 20px;
   left: 20px;
-  color: white;
-  mix-blend-mode: difference;
+  /* color: white; */
+  /* mix-blend-mode: difference; */
   width: 50%;
   padding-right: 40px;
 }
 
+header summary,
 nav summary{
   text-decoration: underline;
 }
 
+header summary:hover,
 nav summary:hover,
 nav summary ul:hover{
   cursor: pointer;
@@ -89,7 +91,7 @@ header details{
     /* background-color: red; */
     /* margin-bottom: 25%; */
     text-align: left;
-    padding: 20px 20px 25vh 20px;
+    padding: 20px 20px 0px 20px;
     position: relative;
     z-index: 2;
     left: 100%;
@@ -98,13 +100,84 @@ header details{
     /* mix-blend-mode: difference; */
 }
 
-summary{
-    display: inline;
+header details[open]{
+  padding-bottom: 20px;
+}
+
+header details summary{
+  padding-bottom: 20px;
+    /* display: inline; */
 }
 
 details a{
   color: white;
   /* mix-blend-mode: difference; */
+}
+
+figure:nth-of-type(1) figcaption,
+ul li:nth-of-type(1),
+ul li:nth-of-type(1) a{
+  color: olive;
+}
+
+figure:nth-of-type(2) figcaption,
+ul li:nth-of-type(2),
+ul li:nth-of-type(2) a{
+  color: darkorchid;
+}
+
+figure:nth-of-type(3) figcaption,
+ul li:nth-of-type(3),
+ul li:nth-of-type(3) a{
+  color: coral;
+}
+
+figure:nth-of-type(4) figcaption,
+ul li:nth-of-type(4),
+ul li:nth-of-type(4) a{
+  color: rosybrown;
+}
+
+figure:nth-of-type(5) figcaption,
+ul li:nth-of-type(5),
+ul li:nth-of-type(5) a{
+  color: green;
+}
+
+figure:nth-of-type(6) figcaption,
+ul li:nth-of-type(6),
+ul li:nth-of-type(6) a{
+  color: dodgerblue;
+}
+
+figure:nth-of-type(7) figcaption,
+ul li:nth-of-type(7),
+ul li:nth-of-type(7) a{
+  color: burlywood;
+}
+
+figure:nth-of-type(8) figcaption,
+ul li:nth-of-type(8),
+ul li:nth-of-type(8) a{
+  color: darkred;
+}
+
+figure:nth-of-type(9) figcaption,
+ul li:nth-of-type(9),
+ul li:nth-of-type(9) a{
+  color: darkolivegreen;
+}
+
+figure:nth-of-type(10) figcaption,
+ul li:nth-of-type(10),
+ul li:nth-of-type(10) a{
+  color: crimson;
+}
+
+figure:nth-of-type(11) figcaption,
+ul li:nth-of-type(11),
+ul li:nth-of-type(11) a{
+  color: grey;
 }
 
 .web-container a{
@@ -161,21 +234,25 @@ body > figure > figcaption {
 }
 
 .project-type::before,
-  footer .project-year::before,
+footer .project-year::before,
 .project-year::after,
 .project-specs::before,
 .project-credit::before,
-li:not(:last-of-type):after{
+li span::before{
     content: "• ";
   }
 
-body > figure > figcaption > *{
+  li span{
+    opacity: 0.5;
+  }
+
+/* body > figure > figcaption > *{
   font-size: 18pt;
 }
 
 body > figure > figure figcaption > *{
   font-size: 10pt;
-}
+} */
 
 figcaption p{
   padding: 20px 0;
