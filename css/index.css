@@ -35,6 +35,10 @@ h2{
   border-radius: 100px; */
 }
 
+h3{
+  opacity: 0.5;
+}
+
 sup{
   font-size: 10pt;
 }
@@ -62,12 +66,21 @@ footer > * {
 nav{
   position: fixed;
   z-index: 999;
-  top: 20px;
-  left: 20px;
+  top: 0;
+  left: 0;
   /* color: white; */
   /* mix-blend-mode: difference; */
-  width: 50%;
-  padding-right: 40px;
+  /* width: 50%; */
+}
+
+nav details{
+  padding: 20px;
+}
+
+nav details[open]{
+  background-color: white;
+  height: 100vh;
+  opacity: 0.75;
 }
 
 header summary,
@@ -238,7 +251,7 @@ figure > :first-child {
     /* margin-top: 0; */
   }
 
-  body > figure > figure > figcaption {
+body > figure > figure > figcaption {
     /* border: 1px solid red; */
     /* border-bottom: 1px dotted grey; */
     /* border-left: 0.5px solid black; */
@@ -309,7 +322,7 @@ figure > video{
   height: 100vh;
   overflow: hidden;
   background-color: rgb(235, 235, 235);
-  padding: 40px;
+  padding: 80px;
   border-top: 0.5px solid lightgrey;
   border-bottom: 0.5px solid lightgrey;
 }
@@ -416,21 +429,37 @@ figure > *:last-child {
     /* mix-blend-mode: difference; */
   }
 
+  .blur-effect {
+    filter: blur(10px);
+}
+
+
 /*
 mobile view
 */
 @media only screen and (max-width: 480px) {
+  footer > div{
+    display: none;
+  }
 
 body>figure>figure>*{
   margin-bottom: 25vh;
 }
 
   *{
-    font-size: 10pt;
+    font-size: 12pt;
+  }
+
+  li{
+    display: block;
+    padding-left: 20px;
+    text-indent: -17px;
+    line-height: 1.5;
   }
 
   .media-container{
     height: 60vh;
+    padding: 40px;
   }
 
   .web-container {
@@ -454,13 +483,19 @@ body>figure>figure>*{
     padding: 0 40px;
   }
 
+  body > figure > figcaption {
+    top: 40px;
+  width: 100%;
+  transform: translateX(0);
+}
+
   .web-container video,
   .web-container img {
     border-radius: 5px;
   }
 
   sup{
-    font-size: 5pt;
+    font-size: 6pt;
   }
 }
 
@@ -469,16 +504,25 @@ tablet view
 */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   
+  footer > div{
+    display: none;
+  }
+
 body>figure>figure>*{
   margin-bottom: 25vh;
 }
 
   *{
-    font-size: 10pt;
+    font-size: 12pt;
+  }
+
+  li{
+    display: inline
   }
 
   .media-container{
     height: 60vh;
+    padding: 40px;
   }
 
   .web-container {
@@ -502,12 +546,18 @@ body>figure>figure>*{
     padding: 0 40px;
   }
 
+  body > figure > figcaption {
+    top: 40px;
+  width: 100%;
+  transform: translateX(0);
+}
+
   .web-container video,
   .web-container img {
     border-radius: 5px;
   }
-  
+
   sup{
-    font-size: 5pt;
+    font-size: 6pt;
   }
 }
