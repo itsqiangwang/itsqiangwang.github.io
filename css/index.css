@@ -408,7 +408,7 @@ figure > *:last-child {
     position: fixed;
     left: 0;
     top: 0;
-    border-right: 0.5px solid #424242;
+    border-right: 0.5px solid #848484;
   }
 
   footer{
