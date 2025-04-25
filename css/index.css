@@ -44,6 +44,11 @@ sup{
   font-size: 10pt;
 }
 
+a{
+  text-decoration: none;
+  border-bottom: 1px solid #424242;
+}
+
 header,
 footer {
   /* background-color: red; */
@@ -87,7 +92,8 @@ nav details[open]{
 
 header summary,
 nav summary{
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  border-bottom: 1px solid #424242;
   display: inline;
 }
 
@@ -111,13 +117,22 @@ ul{
 }
 
 li{
-  display: inline;
+    display: block;
+    width: 50%;
+    /* padding-left: 33px;
+    text-indent: -33px; */
 }
 
-li span {
-  /* display: block; */
-  /* margin-bottom: 20px; */
+/* li img {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 80px;
 }
+
+li a:hover > img{
+  display: block;
+} */
 
 li a{
   /* display: inline-block; */
@@ -437,6 +452,10 @@ mobile view
     display: none;
   }
 
+  nav details[open]{
+    width: 100vw;
+  }
+
 body>figure>figure>*{
   margin-bottom: 25vh;
 }
@@ -448,8 +467,9 @@ body>figure>figure>*{
   li{
     display: block;
     padding-left: 20px;
-    text-indent: -17px;
+    text-indent: -20px;
     line-height: 1.5;
+    width: 100%;
   }
 
   .media-container{
@@ -498,7 +518,10 @@ body>figure>figure>*{
 tablet view
 */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  
+  nav details[open]{
+    width: 100vw;
+  }
+
   footer > div{
     display: none;
   }
@@ -512,7 +535,11 @@ body>figure>figure>*{
   }
 
   li{
-    display: inline
+    display: block;
+    padding-left: 20px;
+    text-indent: -20px;
+    line-height: 1.5;
+    width: 100%;
   }
 
   .media-container{
